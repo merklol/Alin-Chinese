@@ -39,10 +39,22 @@ import javax.inject.Inject
  */
 interface CrudRepository {
 
+    /**
+     * Fetches favorite lessons from the app database.
+     *
+     * @return [Flow]
+     * @since 0.1
+     */
     fun getFavoriteLessons(): Flow<List<LessonEntity>>
 
+    /**
+     * Saves a lesson to the app database.
+     */
     suspend fun saveToFavorites(lesson: Lesson): Any?
 
+    /**
+     * Removes a lesson from the app database.
+     */
     suspend fun removeFromFavorites(lesson: Lesson): Any?
 
     /**
