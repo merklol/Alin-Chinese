@@ -27,6 +27,11 @@ package com.maximapps.core.utils
 import android.database.sqlite.SQLiteException
 import android.util.Log
 
+/**
+ * Safely execute a database operation.
+ *
+ * @since 0.1
+ */
 inline fun execute(operation: () -> Unit) = try {
     operation()
 } catch (e: SQLiteException) {
