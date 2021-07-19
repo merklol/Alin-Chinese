@@ -24,4 +24,4 @@
 
 package com.maximapps.page.exceptions
 
-class InvalidAlignmentTypeException(message: String): DeserializerException(message)
+class InvalidAlignmentTypeException(message: String) : DeserializerException(message)

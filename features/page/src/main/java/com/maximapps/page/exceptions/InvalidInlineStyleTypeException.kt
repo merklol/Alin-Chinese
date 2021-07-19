@@ -24,4 +24,4 @@
 
 package com.maximapps.page.exceptions
 
-class InvalidInlineStyleTypeException(message: String): DeserializerException(message)
+class InvalidInlineStyleTypeException(message: String) : DeserializerException(message)
