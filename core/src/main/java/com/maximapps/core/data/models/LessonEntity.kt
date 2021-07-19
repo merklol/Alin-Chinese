@@ -69,6 +69,4 @@ data class LessonEntity(
         result = 31 * result + date.hashCode()
         return result
     }
-
-
 }
