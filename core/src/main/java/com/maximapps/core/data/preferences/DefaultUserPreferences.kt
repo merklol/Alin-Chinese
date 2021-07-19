@@ -28,6 +28,11 @@ import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
+/**
+ * Default implementation of the UserPreferences interface.
+ *
+ * @since 0.1
+ */
 class DefaultUserPreferences @Inject constructor(
     @ApplicationContext context: Context
 ) : UserPreferences {

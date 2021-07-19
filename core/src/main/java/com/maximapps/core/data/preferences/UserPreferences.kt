@@ -26,12 +26,48 @@ package com.maximapps.core.data.preferences
 
 import javax.inject.Inject
 
+/**
+ * Wrapper class for SharedPreferences.
+ *
+ * @since 0.1
+ */
 interface UserPreferences {
+
+    /**
+     * Retrieves an email from the preferences.
+     *
+     * @since 0.1
+     */
     val email: String?
+
+    /**
+     * Retrieves the current authentication state from the preferences.
+     *
+     * @since 0.1
+     */
     val isAuthenticated: Boolean
+
+    /**
+     * Set a new authentication state from the preferences.
+     *
+     * @param state authentication state in boolean
+     * @since 0.1
+     */
     fun setAuthenticationState(state: Boolean)
+
+    /**
+     * Saves logged in user details into the preferences.
+     *
+     * @param email an email address in String format
+     * @since 0.1
+     */
     fun storeLoggedInUserDetails(email: String?)
 
+    /**
+     * Fake implementation of the UserPreferences interface.
+     *
+     * @since 0.1
+     */
     class Fake @Inject constructor(): UserPreferences {
         override val email = "admin@gmail.com"
 
