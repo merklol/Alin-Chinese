@@ -68,13 +68,17 @@ interface UserPreferences {
      *
      * @since 0.1
      */
-    class Fake @Inject constructor(): UserPreferences {
+    class Fake @Inject constructor() : UserPreferences {
         override val email = "admin@gmail.com"
 
         override val isAuthenticated = false
 
-        override fun setAuthenticationState(state: Boolean) { /*no-op*/ }
+        override fun setAuthenticationState(state: Boolean) {
+            /*no-op*/
+        }
 
-        override fun storeLoggedInUserDetails(email: String?) { /*no-op*/ }
+        override fun storeLoggedInUserDetails(email: String?) {
+            /*no-op*/
+        }
     }
 }
