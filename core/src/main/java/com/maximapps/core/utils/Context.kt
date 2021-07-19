@@ -28,5 +28,12 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 
-fun Context.readBitmapFromAssets(fileName : String): Bitmap =
+/**
+ * Reads a bitmap from assets.
+ *
+ * @param fileName the name of the asset to open.
+ * @throws java.io.IOException
+ * @since 0.1
+ */
+fun Context.readBitmapFromAssets(fileName: String): Bitmap =
     assets.open(fileName).use(BitmapFactory::decodeStream)
