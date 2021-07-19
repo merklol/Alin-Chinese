@@ -26,6 +26,12 @@ package com.maximapps.core.utils
 
 import android.view.View
 
+/**
+ * Registers a callback to be invoked with a delay when this view clicked.
+ *
+ * @param millis time in milliseconds
+ * @since 0.1
+ */
 fun View.setDelayedClickListener(millis: Long = 500, block: (view: View) -> Unit) {
     setOnClickListener {
         it.isClickable = false
