@@ -37,9 +37,9 @@ import com.maximapps.page.data.models.Paragraph
 import com.maximapps.page.data.models.UnorderedList
 import com.maximapps.page.ui.common.views.blockquote
 import com.maximapps.page.ui.common.views.divider
-import com.maximapps.page.ui.common.views.header1
-import com.maximapps.page.ui.common.views.header2
-import com.maximapps.page.ui.common.views.header3
+import com.maximapps.page.ui.common.views.heading1
+import com.maximapps.page.ui.common.views.heading2
+import com.maximapps.page.ui.common.views.heading3
 import com.maximapps.page.ui.common.views.image
 import com.maximapps.page.ui.common.views.paragraph
 import com.maximapps.page.ui.common.views.unorderedList
@@ -54,9 +54,9 @@ import com.maximapps.page.ui.common.views.unorderedList
 fun LinearLayoutCompat.addViews(context: Context, nodes: List<Node>) {
     nodes.forEach {
         when (it) {
-            is Header1 -> addView(header1(context, it.value, it.inlineStyle, it.alignment))
-            is Header2 -> addView(header2(context, it.value, it.inlineStyle, it.alignment))
-            is Header3 -> addView(header3(context, it.value, it.inlineStyle, it.alignment))
+            is Header1 -> addView(heading1(context, it.value, it.inlineStyle, it.alignment))
+            is Header2 -> addView(heading2(context, it.value, it.inlineStyle, it.alignment))
+            is Header3 -> addView(heading3(context, it.value, it.inlineStyle, it.alignment))
             is Paragraph -> addView(paragraph(context, it.value, it.inlineStyle, it.alignment))
             is Image -> addView(image(context = context, link = it.link))
             is UnorderedList -> addView(unorderedList(context = context, items = it.items))
