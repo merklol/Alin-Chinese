@@ -29,6 +29,6 @@ import androidx.room.RoomDatabase
 import com.maximapps.core.data.models.LessonEntity
 
 @Database(entities = [LessonEntity::class], version = 1, exportSchema = false)
-abstract class AppDatabase: RoomDatabase() {
+abstract class AppDatabase : RoomDatabase() {
     abstract fun favoriteLessonsDao(): FavoriteLessonsDao
 }
