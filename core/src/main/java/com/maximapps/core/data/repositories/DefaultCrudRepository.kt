@@ -32,6 +32,11 @@ import com.maximapps.core.utils.execute
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
+/**
+ * Default implementation of the CrudRepository interface.
+ *
+ * @since 0.1
+ */
 class DefaultCrudRepository(
     private val favoriteLessonsDao: FavoriteLessonsDao,
     private val userPreferences: UserPreferences

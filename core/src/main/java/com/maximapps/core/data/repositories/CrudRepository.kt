@@ -32,6 +32,11 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
+/**
+ * Repository to perform generic CRUD operations on a database.
+ *
+ * @since 0.1
+ */
 interface CrudRepository {
 
     fun getFavoriteLessons(): Flow<List<LessonEntity>>
@@ -40,6 +45,11 @@ interface CrudRepository {
 
     suspend fun removeFromFavorites(lesson: Lesson): Any?
 
+    /**
+     * Fake implementation of the CrudRepository interface.
+     *
+     * @since 0.1
+     */
     class Fake @Inject constructor(private val context: Context) : CrudRepository {
 
         override fun getFavoriteLessons() = flow {
