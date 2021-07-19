@@ -29,6 +29,8 @@ import com.maximapps.page.data.models.InlineStyle
 
 /**
  * Specifies the font style for a text.
+ *
+ * @since 0.1
  */
 data class TextStyle(
     val size: Float,
