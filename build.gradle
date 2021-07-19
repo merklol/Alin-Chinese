@@ -1,0 +1,48 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    apply from: 'dependencies.gradle'
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.0-alpha03'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.37'
+        classpath 'com.google.gms:google-services:4.3.8'
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+plugins {
+    id "io.gitlab.arturbosch.detekt" version "1.17.0"
+}
+
+subprojects {
+    apply plugin: "io.gitlab.arturbosch.detekt"
+
+    detekt {
+        toolVersion = "1.17.0"
+        config = files("$rootDir/config/detekt/detekt.yml")
+        buildUponDefaultConfig = true
+        allRules = true
+
+        reports {
+            html {
+                enabled = true
+                destination = file("$rootDir/build/detekt/detekt.html")
+            }
+        }
+    }
+}
+
+tasks.detekt.jvmTarget = "1.8"
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
