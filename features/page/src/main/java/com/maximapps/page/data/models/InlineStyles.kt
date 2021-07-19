@@ -37,7 +37,7 @@ sealed class InlineStyle
 data class Bold(val start: Int, val end: Int) : InlineStyle()
 
 /**
- * Defines an italic font style
+ * Defines an italic font style.
  *
  * @since 0.1
  */
