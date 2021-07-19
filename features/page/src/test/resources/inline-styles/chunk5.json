@@ -1,0 +1,17 @@
+[
+  {
+    "type":"bold",
+    "start":0,
+    "end":5
+  },
+  {
+    "type":"italic",
+    "start":0,
+    "end":5
+  },
+  {
+    "type":"underline",
+    "start":0,
+    "end":5
+  }
+]
