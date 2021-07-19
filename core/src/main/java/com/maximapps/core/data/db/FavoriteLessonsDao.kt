@@ -25,10 +25,10 @@
 package com.maximapps.core.data.db
 
 import androidx.room.Dao
-import androidx.room.Query
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
-import androidx.room.Delete
+import androidx.room.Query
 import com.maximapps.core.data.models.LessonEntity
 import kotlinx.coroutines.flow.Flow
 
