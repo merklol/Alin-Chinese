@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.AlinChinese" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!--Primary Colors-->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryVariant">@color/green_900</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!--Secondary Colors-->
+        <item name="colorSecondary">@color/light_green_300</item>
+        <item name="colorSecondaryVariant">@color/light_green_300</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!--Status Bar-->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+
+        <!--Buttons highlight-->
+        <item name="colorControlHighlight">@color/dark_green_800</item>
+
+        <!--Inline link color-->
+        <item name="android:textColorLink">@color/light_green_300</item>
+
+        <!--Toolbar and Fragment-->
+        <item name="toolbarBackground">@color/dark_green_900</item>
+        <item name="fragmentBackground">@color/dark_green_900</item>
+
+        <!--Lesson list item-->
+        <item name="listItemBackground">@color/dark_green_800</item>
+        <item name="listItemTitleColor">@color/white</item>
+        <item name="listItemDateColor">@color/light_green_300</item>
+
+        <!--Profile-->
+        <item name="delimiterColor">@color/dark_green_800</item>
+        <item name="labelColor">@color/light_green_300</item>
+        <item name="textButtonColor">@color/white</item>
+        <item name="appVersionColor">@color/white</item>
+        <item name="logoutButtonColor">@color/light_green_300</item>
+
+        <!--Preview-->
+        <item name="previewBackground">@color/dark_green_900</item>
+        <item name="previewTitleColor">@color/white</item>
+        <item name="previewDateColor">@color/light_green_300</item>
+        <item name="previewDescriptionColor">@color/gray_300</item>
+        <item name="previewButtonsColor">@color/light_green_300</item>
+
+        <!--Page-->
+        <item name="favoriteBtnColor">@color/white</item>
+
+        <!--Authentication-->
+        <item name="authenticationTitleColor">@color/white</item>
+
+        <!--Error Page-->
+        <item name="errorPageTitleColor">@color/white</item>
+        <item name="errorPageDescriptionColor">@color/gray_300</item>
+    </style>
+
+</resources>
