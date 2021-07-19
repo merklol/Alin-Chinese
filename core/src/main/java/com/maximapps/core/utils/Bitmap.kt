@@ -28,8 +28,19 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import java.io.ByteArrayOutputStream
 
+/**
+ * Converts and compress a bitmap into a new byte array.
+ *
+ * @param quality hint to the compressor, 0-100. The value is interpreted
+ * @since 0.1
+ */
 fun Bitmap.toByteArray(quality: Int = 100): ByteArray = ByteArrayOutputStream().also {
     compress(Bitmap.CompressFormat.PNG, quality, it)
 }.toByteArray()
 
+/**
+ * Converts the byte array into an immutable bitmap.
+ *
+ * @since 0.1
+ */
 fun ByteArray.toBitmap(): Bitmap = BitmapFactory.decodeByteArray(this, 0, size)
