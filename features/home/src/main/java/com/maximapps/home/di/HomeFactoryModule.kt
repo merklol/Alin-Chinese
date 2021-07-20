@@ -26,7 +26,7 @@ package com.maximapps.home.di
 
 import androidx.fragment.app.Fragment
 import com.maximapps.core.di.FragmentKey
-import com.maximapps.home.ui.HomeFragment
+import com.maximapps.home.ui.home.HomeFragment
 import com.maximapps.home.ui.preview.PreviewFragment
 import dagger.Binds
 import dagger.Module
