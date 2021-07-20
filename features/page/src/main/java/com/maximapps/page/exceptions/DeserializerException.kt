@@ -24,4 +24,4 @@
 
 package com.maximapps.page.exceptions
 
-open class DeserializerException(message: String) : Exception(message)
+internal open class DeserializerException(message: String) : Exception(message)

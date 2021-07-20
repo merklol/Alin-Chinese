@@ -35,7 +35,7 @@ import com.maximapps.page.ui.common.unit.dp
  *
  * @since 0.1
  */
-data class Modifier(
+internal data class Modifier(
     val width: Int = LinearLayoutCompat.LayoutParams.MATCH_PARENT,
     val height: Int = LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
     val margin: Margin = Margin(0, 8.dp, 0, 8.dp),

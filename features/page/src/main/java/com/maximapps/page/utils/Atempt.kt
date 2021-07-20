@@ -35,9 +35,9 @@ import kotlin.reflect.KClass
  * @param block block of code to be tested for errors
  * @since 0.1
  */
-fun attempt(block: () -> UIState) = block
+internal fun attempt(block: () -> UIState) = block
 
-fun (() -> UIState).catch(
+internal fun (() -> UIState).catch(
     vararg exceptions: KClass<out Throwable>,
     catchBlock: (Throwable) -> UIState
 ): UIState = try {

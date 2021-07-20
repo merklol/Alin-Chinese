@@ -29,7 +29,7 @@ package com.maximapps.page.ui.common.layout
  *
  *  @since 0.1
  */
-data class Padding(
+internal data class Padding(
     val start: Int,
     val top: Int,
     val end: Int,

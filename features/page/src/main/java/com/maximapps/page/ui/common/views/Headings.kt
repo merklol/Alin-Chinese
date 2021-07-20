@@ -41,7 +41,7 @@ import com.maximapps.page.utils.isDarkTheme
  * @param alignment [Alignment]
  * @since 0.1
  */
-fun heading1(
+internal fun heading1(
     context: Context,
     text: CharSequence,
     inlineStyle: List<InlineStyle>?,
@@ -69,7 +69,7 @@ fun heading1(
  * @param alignment [Alignment]
  * @since 0.1
  */
-fun heading2(
+internal fun heading2(
     context: Context,
     text: CharSequence,
     inlineStyle: List<InlineStyle>?,
@@ -97,7 +97,7 @@ fun heading2(
  * @param alignment [Alignment]
  * @since 0.1
  */
-fun heading3(
+internal fun heading3(
     context: Context,
     text: CharSequence,
     inlineStyle: List<InlineStyle>?,

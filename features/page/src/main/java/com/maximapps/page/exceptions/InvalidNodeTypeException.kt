@@ -24,4 +24,4 @@
 
 package com.maximapps.page.exceptions
 
-class InvalidNodeTypeException(message: String) : DeserializerException(message)
+internal class InvalidNodeTypeException(message: String) : DeserializerException(message)

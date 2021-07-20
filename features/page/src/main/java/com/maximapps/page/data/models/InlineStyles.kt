@@ -27,32 +27,32 @@ package com.maximapps.page.data.models
 /**
  * Specifies an inline style for a single node.
  */
-sealed class InlineStyle
+internal sealed class InlineStyle
 
 /**
  * Defines thick characters.
  *
  * @since 0.1
  */
-data class Bold(val start: Int, val end: Int) : InlineStyle()
+internal data class Bold(val start: Int, val end: Int) : InlineStyle()
 
 /**
  * Defines an italic font style.
  *
  * @since 0.1
  */
-data class Italic(val start: Int, val end: Int) : InlineStyle()
+internal data class Italic(val start: Int, val end: Int) : InlineStyle()
 
 /**
  * Defines a link.
  *
  * @since 0.1
  */
-data class Link(val start: Int, val end: Int, val href: String) : InlineStyle()
+internal data class Link(val start: Int, val end: Int, val href: String) : InlineStyle()
 
 /**
  * Defines an underline text decoration.
  *
  * @since 0.1
  */
-data class Underline(val start: Int, val end: Int) : InlineStyle()
+internal data class Underline(val start: Int, val end: Int) : InlineStyle()

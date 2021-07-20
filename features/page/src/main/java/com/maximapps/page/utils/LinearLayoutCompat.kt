@@ -51,7 +51,7 @@ import com.maximapps.page.ui.common.views.unorderedList
  * @param nodes the list of nodes to add
  * @since 0.1
  */
-fun LinearLayoutCompat.addViews(context: Context, nodes: List<Node>) {
+internal fun LinearLayoutCompat.addViews(context: Context, nodes: List<Node>) {
     nodes.forEach {
         when (it) {
             is Header1 -> addView(heading1(context, it.value, it.inlineStyle, it.alignment))

@@ -37,7 +37,7 @@ import java.lang.reflect.Type
  *
  * @since 0.1
  */
-class AlignmentDeserializer : JsonDeserializer<Alignment> {
+internal class AlignmentDeserializer : JsonDeserializer<Alignment> {
     override fun deserialize(
         json: JsonElement, typeOfT: Type, context: JsonDeserializationContext
     ): Alignment =
