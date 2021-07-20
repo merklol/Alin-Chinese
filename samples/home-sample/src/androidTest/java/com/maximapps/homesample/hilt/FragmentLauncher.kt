@@ -39,7 +39,7 @@ const val EMPTY_FRAGMENT_ACTIVITY =
     "androidx.fragment.app.testing.FragmentScenario.EmptyFragmentActivity.THEME_EXTRAS_BUNDLE_KEY"
 
 @SuppressLint("RestrictedApi")
-inline fun <reified T : Fragment, reified A: AppCompatActivity> launchFragmentInHiltContainer(
+inline fun <reified T : Fragment, reified A : AppCompatActivity> launchFragmentInHiltContainer(
     config: HiltContainerConfig,
     crossinline action: T.() -> Unit = {}
 ) {
