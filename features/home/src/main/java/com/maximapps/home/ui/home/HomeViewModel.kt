@@ -31,7 +31,7 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.maximapps.home.data.models.Lesson
-import com.maximapps.home.usecases.QueryLessons
+import com.maximapps.home.domain.usecases.QueryLessons
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -43,7 +43,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 @ExperimentalCoroutinesApi
-class HomeViewModel @Inject constructor(
+internal class HomeViewModel @Inject constructor(
     private val config: PagingConfig,
     private val queryLessons: QueryLessons
 ) : ViewModel() {

@@ -29,7 +29,7 @@ package com.maximapps.home.ui.lessonlist
  *
  * @since 0.1
  */
-object LessonListItemTypes {
+internal object LessonListItemTypes {
     const val Regular = 1
     const val Medium = 2
 }

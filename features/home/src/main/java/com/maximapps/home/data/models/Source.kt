@@ -29,7 +29,7 @@ package com.maximapps.home.data.models
  *
  * @since 0.1
  */
-data class Source(
+internal data class Source(
     var id: Int = 0,
     var template: Int = 0,
     var title: String = "",

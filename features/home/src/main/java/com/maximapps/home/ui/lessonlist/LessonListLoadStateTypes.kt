@@ -29,7 +29,7 @@ package com.maximapps.home.ui.lessonlist
  *
  * @since 0.1
  */
-object LessonListLoadStateTypes {
+internal object LessonListLoadStateTypes {
     const val ERROR = 1
     const val PROGRESS = 0
 }

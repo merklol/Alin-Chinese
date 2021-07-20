@@ -54,7 +54,7 @@ fun interface OnLessonListItemClicked {
  *
  * @since 0.1
  */
-class LessonListDiffUtil : DiffUtil.ItemCallback<Lesson>() {
+internal class LessonListDiffUtil : DiffUtil.ItemCallback<Lesson>() {
     override fun areItemsTheSame(oldItem: Lesson, newItem: Lesson): Boolean {
         return oldItem.id == newItem.id
     }

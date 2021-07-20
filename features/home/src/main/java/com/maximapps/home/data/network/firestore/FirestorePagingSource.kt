@@ -39,7 +39,7 @@ import kotlinx.coroutines.tasks.await
  *
  * @since 0.1
  */
-class FirestorePagingSource(private val provider: QueryProvider) :
+internal class FirestorePagingSource(private val provider: QueryProvider) :
     PagingSource<QuerySnapshot, Lesson>() {
 
     override fun getRefreshKey(state: PagingState<QuerySnapshot, Lesson>): QuerySnapshot? = null

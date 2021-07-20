@@ -35,7 +35,7 @@ import javax.inject.Inject
  *
  * @since 0.1
  */
-class FirestoreQueryProvider @Inject constructor(
+internal class FirestoreQueryProvider @Inject constructor(
     private val firestore: FirebaseFirestore,
     private val config: QueryConfig
 ): QueryProvider {

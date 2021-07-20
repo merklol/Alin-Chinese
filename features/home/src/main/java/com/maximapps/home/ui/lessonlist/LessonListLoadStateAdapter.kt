@@ -38,7 +38,7 @@ import com.maximapps.home.databinding.ItemProgressBinding
  *
  * @since 0.1
  */
-class LessonListLoadStateAdapter : LoadStateAdapter<LessonListLoadStateAdapter.ItemViewHolder>() {
+internal class LessonListLoadStateAdapter : LoadStateAdapter<LessonListLoadStateAdapter.ItemViewHolder>() {
 
     override fun getStateViewType(loadState: LoadState) = when (loadState) {
         is LoadState.NotLoading -> error("Not supported")
