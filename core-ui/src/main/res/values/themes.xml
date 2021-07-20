@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.AlinChinese" parent="Theme.MaterialComponents.DayNight">
+        <!--Primary Colors-->
+        <item name="colorPrimary">@color/green_700</item>
+        <item name="colorPrimaryVariant">@color/green_900</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!--Secondary Colors-->
+        <item name="colorSecondary">@color/light_green_300</item>
+        <item name="colorSecondaryVariant">@color/light_green_300</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!--Buttons highlight-->
+        <item name="colorControlHighlight">@color/dark_green_100</item>
+
+        <!--Inline link color-->
+        <item name="android:textColorLink">@color/green_700</item>
+
+        <!--Status Bar-->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!--Toolbar and Fragment-->
+        <item name="toolbarBackground">@color/white</item>
+        <item name="fragmentBackground">@color/white</item>
+
+        <!--Lesson list item-->
+        <item name="listItemBackground">@color/white</item>
+        <item name="listItemTitleColor">@color/dark_green_900</item>
+        <item name="listItemDateColor">@color/green_700</item>
+
+        <!--Profile-->
+        <item name="delimiterColor">@color/gray_300</item>
+        <item name="labelColor">@color/dark_green_700</item>
+        <item name="textButtonColor">@color/dark_green_900</item>
+        <item name="appVersionColor">@color/dark_green_700</item>
+        <item name="logoutButtonColor">@color/green_700</item>
+
+        <!--Preview-->
+        <item name="previewBackground">@color/white</item>
+        <item name="previewTitleColor">@color/dark_green_900</item>
+        <item name="previewDateColor">@color/green_700</item>
+        <item name="previewDescriptionColor">@color/dark_green_700</item>
+        <item name="previewButtonsColor">@color/green_700</item>
+
+        <!--Page-->
+        <item name="favoriteBtnColor">@color/black</item>
+
+        <!--Authentication-->
+        <item name="authenticationTitleColor">@color/dark_green_900</item>
+
+        <!--Error Page-->
+        <item name="errorPageTitleColor">@color/dark_green_900</item>
+        <item name="errorPageDescriptionColor">@color/dark_green_700</item>
+    </style>
+
+    <style name="Theme.AlinChinese.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AlinChinese.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="Theme.AlinChinese.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

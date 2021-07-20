@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back">Back</string>
+    <string name="error_page_message">Whoops! Something went wrong.</string>
+    <string name="added_to_favorites">%s added to favorites.</string>
+    <string name="removed_from_favorites">%s removed from favorites.</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="remove_from_favorites">Unfavorite</string>
+</resources>

@@ -1,0 +1,19 @@
+[
+  {
+    "type":"list",
+    "items":[
+      {
+        "value":"item 1"
+      },
+      {
+        "value":"item 2"
+      },
+      {
+        "value":"item 3"
+      },
+      {
+        "value":"item 4"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "873979479169",
+    "project_id": "bilingoal-grammar",
+    "storage_bucket": "bilingoal-grammar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873979479169:android:f9ef4bf0344783b0d17980",
+        "android_client_info": {
+          "package_name": "com.maximapps.homesample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873979479169-oj3c47ue7nmbpabmg8ft8vlskhfdnor6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maximapps.homesample",
+            "certificate_hash": "a6cd9569e15c4b0f36bb1cd5fd09ef92a7415722"
+          }
+        },
+        {
+          "client_id": "873979479169-cp23lmmmr0c672m7df81f4hp37tjbufd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBWpfjC9URdmUyVV58VtGfPKSaI_pt-9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873979479169-cp23lmmmr0c672m7df81f4hp37tjbufd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

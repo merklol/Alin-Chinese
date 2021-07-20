@@ -1,0 +1,20 @@
+[
+  {
+    "type": "paragraph",
+    "alignment": "end",
+    "value": "Lorem ipsum"
+  },
+  {
+    "type": "img",
+    "link": ""
+  },
+  {
+    "type": "blockquote",
+    "value": "Lorem ipsum"
+  },
+  {
+    "type": "paragraph",
+    "alignment": "start",
+    "value": "Lorem ipsum"
+  }
+]

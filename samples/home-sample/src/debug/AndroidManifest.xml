@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.maximapps.homesample">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="false"
+        android:theme="@style/Theme.AlinChinese.NoActionBar"
+        tools:replace="android:theme"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name="com.maximapps.homesample.HiltTestActivity"
+            android:exported="false"/>
+    </application>
+</manifest>

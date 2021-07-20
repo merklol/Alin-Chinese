@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Theme.BilingoalGrammar">
+        <attr name="toolbarBackground" format="color" />
+        <attr name="fragmentBackground" format="color" />
+
+        <attr name="listItemBackground" format="color" />
+        <attr name="listItemTitleColor" format="color" />
+        <attr name="listItemDateColor" format="color" />
+
+        <attr name="delimiterColor" format="color" />
+        <attr name="labelColor" format="color" />
+        <attr name="textButtonColor" format="color" />
+        <attr name="appVersionColor" format="color" />
+        <attr name="logoutButtonColor" format="color" />
+
+        <attr name="previewBackground" format="color" />
+        <attr name="previewTitleColor" format="color" />
+        <attr name="previewDateColor" format="color" />
+        <attr name="previewDescriptionColor" format="color" />
+        <attr name="previewButtonsColor" format="color" />
+
+        <attr name="favoriteBtnColor" format="color" />
+
+        <attr name="authenticationTitleColor" format="color" />
+
+        <attr name="errorPageTitleColor" format="color" />
+        <attr name="errorPageDescriptionColor" format="color" />
+    </declare-styleable>
+</resources>
