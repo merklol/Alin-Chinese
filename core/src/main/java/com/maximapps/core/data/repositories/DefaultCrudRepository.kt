@@ -25,8 +25,9 @@
 package com.maximapps.core.data.repositories
 
 import com.maximapps.core.data.db.FavoriteLessonsDao
-import com.maximapps.core.data.preferences.UserPreferences
+import com.maximapps.core.domain.preferences.UserPreferences
 import com.maximapps.core.domain.Lesson
+import com.maximapps.core.domain.repositories.CrudRepository
 import com.maximapps.core.domain.toLessonEntity
 import com.maximapps.core.utils.execute
 import kotlinx.coroutines.Dispatchers
