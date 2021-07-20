@@ -1,0 +1,11 @@
+<resources>
+    <string name="lesson_list_item_image">List item image</string>
+    <string name="lesson_bottom_sheet_image">Bottom sheet image</string>
+    <string name="open_btn_text">Open</string>
+    <string name="error_image">Error image</string>
+    <string name="retry_btn_text">Try Again</string>
+    <string name="error_description">Check your internet connection and try again</string>
+    <string name="error_title">Whoops!</string>
+    <string name="error_preview_message">Whoops! Something went wrong.</string>
+    <string name="added_to_favorites">%s added to favorites.</string>
+</resources>
