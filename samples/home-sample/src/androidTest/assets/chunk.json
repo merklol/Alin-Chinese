@@ -1,0 +1,28 @@
+[
+  {
+    "type": "header1",
+    "alignment": "center",
+    "value": "Common Chinese Grammar Structures for 的 (de) vs. 得 (de) vs. 地(de)"
+  },
+  {
+    "type": "paragraph",
+    "value": "They even sound the same! How can words be so similar, without meaning the same thing?"
+  },
+  {
+    "type": "paragraph",
+    "value": "It boils down to this main difference: 的 is used with nouns and 得 is used with verbs. The last one, 地, is mainly used to modify verbs (like the “ly” in English)."
+  },
+  {
+    "type": "header2",
+    "alignment": "start",
+    "inline-style": [
+      {
+        "type": "link",
+        "start": 0,
+        "end": 18,
+        "href": "https://www.google.com"
+      }
+    ],
+    "value": "1. Noun + 的 + Noun"
+  }
+]
