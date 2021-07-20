@@ -24,6 +24,11 @@
 
 package com.maximapps.home.data.models
 
+/**
+ * Lesson entity
+ *
+ * @since 0.1
+ */
 data class Lesson(
     val id: Int,
     val template: Int,
