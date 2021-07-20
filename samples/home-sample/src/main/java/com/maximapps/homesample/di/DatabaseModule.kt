@@ -28,7 +28,7 @@ import android.content.Context
 import androidx.room.Room
 import com.maximapps.core.data.db.AppDatabase
 import com.maximapps.core.data.preferences.DefaultUserPreferences
-import com.maximapps.core.data.repositories.CrudRepository
+import com.maximapps.core.domain.repositories.CrudRepository
 import com.maximapps.core.data.repositories.DefaultCrudRepository
 import dagger.Module
 import dagger.Provides

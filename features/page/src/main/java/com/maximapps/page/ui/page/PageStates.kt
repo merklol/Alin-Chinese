@@ -27,7 +27,7 @@ package com.maximapps.page.ui.page
 import com.maximapps.page.data.models.Node
 import io.uniflow.core.flow.data.UIState
 
-sealed class PageStates : UIState() {
+internal sealed class PageStates : UIState() {
     class Parsed(val content: List<Node>) : PageStates()
     object Error : PageStates()
 }

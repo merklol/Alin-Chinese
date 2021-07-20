@@ -41,7 +41,7 @@ import com.maximapps.page.utils.isDarkTheme
  * @param alignment [Alignment]
  * @since 0.1
  */
-fun paragraph(
+internal fun paragraph(
     context: Context,
     text: String,
     inlineStyle: List<InlineStyle>?,

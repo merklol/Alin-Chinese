@@ -45,7 +45,7 @@ import java.lang.reflect.Type
  *
  * @since 0.1
  */
-class NodeJsonDeserializer : JsonDeserializer<Node> {
+internal class NodeJsonDeserializer : JsonDeserializer<Node> {
     override fun deserialize(
         json: JsonElement, typeOfT: Type, context: JsonDeserializationContext
     ): Node =

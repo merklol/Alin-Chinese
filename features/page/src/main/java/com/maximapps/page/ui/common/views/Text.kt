@@ -53,7 +53,7 @@ import com.maximapps.page.ui.common.styles.TextStyle
  * @param modifier [Modifier]
  * @since 0.1
  */
-fun text(context: Context, text: CharSequence, textStyle: TextStyle, modifier: Modifier) =
+internal fun text(context: Context, text: CharSequence, textStyle: TextStyle, modifier: Modifier) =
     TextView(context).also {
         it.setLayoutParams(modifier)
         it.setTextColor(ContextCompat.getColor(context, textStyle.colorResId))
@@ -65,16 +65,16 @@ fun text(context: Context, text: CharSequence, textStyle: TextStyle, modifier: M
         it.setText(text, textStyle.inline)
     }
 
-fun TextView.applyBackground(backgroundResId: Int?) = backgroundResId?.let {
+private fun TextView.applyBackground(backgroundResId: Int?) = backgroundResId?.let {
     background = ContextCompat.getDrawable(context, backgroundResId)
 }
 
-fun TextView.applyPadding(padding: Padding?) = padding?.let {
+private fun TextView.applyPadding(padding: Padding?) = padding?.let {
     val (start, top, end, bottom) = padding
     setPadding(start, top, end, bottom)
 }
 
-fun TextView.applyAlignment(alignment: Alignment?) = alignment?.let {
+private fun TextView.applyAlignment(alignment: Alignment?) = alignment?.let {
     gravity = when (alignment) {
         Alignment.Start -> Gravity.START
         Alignment.Center -> Gravity.CENTER
@@ -82,14 +82,14 @@ fun TextView.applyAlignment(alignment: Alignment?) = alignment?.let {
     }
 }
 
-fun TextView.setLayoutParams(modifier: Modifier) {
+private fun TextView.setLayoutParams(modifier: Modifier) {
     val (start, top, end, bottom) = modifier.margin
     val params = LinearLayoutCompat.LayoutParams(modifier.width, modifier.height)
     params.setMargins(start, top, end, bottom)
     layoutParams = params
 }
 
-fun TextView.setText(text: CharSequence, inlineStyle: List<InlineStyle>?) = when (inlineStyle) {
+private fun TextView.setText(text: CharSequence, inlineStyle: List<InlineStyle>?) = when (inlineStyle) {
     null -> this.text = text
     else -> {
         val spannableString = SpannableString(text)

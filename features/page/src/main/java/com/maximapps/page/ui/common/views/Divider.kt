@@ -40,7 +40,7 @@ import com.maximapps.page.utils.isDarkTheme
  * @param modifier [Modifier] to define new styles
  * @since 0.1
  */
-fun divider(
+internal fun divider(
     context: Context,
     modifier: Modifier = Modifier(
         width = LinearLayoutCompat.LayoutParams.MATCH_PARENT,

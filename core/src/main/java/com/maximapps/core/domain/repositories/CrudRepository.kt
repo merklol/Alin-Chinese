@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.maximapps.core.data.repositories
+package com.maximapps.core.domain.repositories
 
 import android.content.Context
 import com.maximapps.core.data.models.LessonEntity

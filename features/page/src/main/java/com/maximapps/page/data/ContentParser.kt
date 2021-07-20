@@ -34,7 +34,7 @@ import javax.inject.Inject
  *
  * @since 0.1
  */
-class ContentParser @Inject constructor(private val gson: Gson) {
+internal class ContentParser @Inject constructor(private val gson: Gson) {
     operator fun invoke(source: String): List<Node> =
         gson.fromJson(source, object : TypeToken<List<Node>>() {}.type)
 }

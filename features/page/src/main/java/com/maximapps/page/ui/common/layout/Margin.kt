@@ -29,7 +29,7 @@ package com.maximapps.page.ui.common.layout
  *
  *  @since 0.1
  */
-data class Margin(
+internal data class Margin(
     val start: Int,
     val top: Int,
     val end: Int,

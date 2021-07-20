@@ -33,6 +33,6 @@ private const val COEFFICIENT = 0.5f
  *
  * @since 0.1
  */
-val Int.dp: Int
+internal val Int.dp: Int
     get() =
         (this * Resources.getSystem().displayMetrics.density + COEFFICIENT).toInt()

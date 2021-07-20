@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.maximapps.core.data.preferences
+package com.maximapps.core.domain.preferences
 
 import javax.inject.Inject
 

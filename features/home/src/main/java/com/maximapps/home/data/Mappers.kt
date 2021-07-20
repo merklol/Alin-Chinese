@@ -35,7 +35,7 @@ import com.maximapps.home.data.models.Source
  *
  * @since 0.1
  */
-fun MutableList<Source>.toLessons() = map {
+internal fun MutableList<Source>.toLessons() = map {
     Lesson(
         id = it.id,
         template = it.template,
@@ -53,7 +53,7 @@ fun MutableList<Source>.toLessons() = map {
  *
  * @since 0.1
  */
-fun Lesson.toSharedLesson(imageBitmap: Bitmap) = SharedLesson(
+internal fun Lesson.toSharedLesson(imageBitmap: Bitmap) = SharedLesson(
     id = id,
     title = title,
     shortTitle = shortTitle,

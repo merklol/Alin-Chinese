@@ -32,7 +32,7 @@ import com.maximapps.page.data.models.InlineStyle
  *
  * @since 0.1
  */
-data class TextStyle(
+internal data class TextStyle(
     val size: Float,
     val inline: List<InlineStyle>? = null,
     val colorResId: Int = R.color.dark_green_900,

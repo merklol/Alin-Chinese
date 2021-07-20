@@ -43,7 +43,7 @@ private const val GAP_WIDTH = 16
  * @param textStyle [TextStyle] to define a custom presentation of the list
  * @since 0.1
  */
-fun unorderedList(
+internal fun unorderedList(
     context: Context, items: List<ListItem>, textStyle: TextStyle =
         TextStyle(
             size = 16f,
@@ -54,7 +54,7 @@ fun unorderedList(
         )
 ) = text(context, items.toBulletedList(), textStyle, Modifier())
 
-fun List<ListItem>.toBulletedList(): CharSequence {
+private fun List<ListItem>.toBulletedList(): CharSequence {
     val spannableString = SpannableString(this.joinToString("\n") { it.value })
     return spannableString.apply {
         this@toBulletedList.foldIndexed(0) { index, acc, span ->

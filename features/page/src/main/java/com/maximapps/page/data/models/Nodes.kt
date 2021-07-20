@@ -31,14 +31,14 @@ import com.google.gson.annotations.SerializedName
  *
  * @since 0.1
  */
-sealed class Node
+internal sealed class Node
 
 /**
  * Defines the most important heading.
  *
  * @since 0.1
  */
-data class Header1(
+internal data class Header1(
     val alignment: Alignment?,
     @SerializedName("inline-style")
     val inlineStyle: List<InlineStyle>?,
@@ -50,7 +50,7 @@ data class Header1(
  *
  * @since 0.1
  */
-data class Header2(
+internal data class Header2(
     val alignment: Alignment?,
     @SerializedName("inline-style")
     val inlineStyle: List<InlineStyle>?,
@@ -62,7 +62,7 @@ data class Header2(
  *
  * @since 0.1
  */
-data class Header3(
+internal data class Header3(
     val alignment: Alignment?,
     @SerializedName("inline-style")
     val inlineStyle: List<InlineStyle>?,
@@ -74,7 +74,7 @@ data class Header3(
  *
  * @since 0.1
  */
-data class Paragraph(
+internal data class Paragraph(
     val alignment: Alignment?,
     @SerializedName("inline-style")
     val inlineStyle: List<InlineStyle>?,
@@ -86,32 +86,32 @@ data class Paragraph(
  *
  * @since 0.1
  */
-data class Blockquote(val value: String) : Node()
+internal data class Blockquote(val value: String) : Node()
 
 /**
  * Defines an image.
  *
  * @since 0.1
  */
-data class Image(val link: String) : Node()
+internal data class Image(val link: String) : Node()
 
 /**
  * Defines a collection of related items that have no special order or sequence.
  *
  * @since 0.1
  */
-data class UnorderedList(val items: List<ListItem>) : Node()
+internal data class UnorderedList(val items: List<ListItem>) : Node()
 
 /**
  * Defines an item of unordered list.
  *
  * @since 0.1
  */
-data class ListItem(val value: String)
+internal data class ListItem(val value: String)
 
 /**
  * Defines a horizontal rule.
  *
  * @since 0.1
  */
-object Divider : Node()
+internal object Divider : Node()

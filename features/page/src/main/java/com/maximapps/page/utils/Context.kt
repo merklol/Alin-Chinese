@@ -32,5 +32,5 @@ import android.content.res.Configuration
  *
  * @since 0.1
  */
-fun Context.isDarkTheme() = resources.configuration.uiMode and
+internal fun Context.isDarkTheme() = resources.configuration.uiMode and
         Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES

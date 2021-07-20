@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.maximapps.home.usecases
+package com.maximapps.home.domain.usecases
 
 import androidx.paging.PagingSource
 import com.google.firebase.firestore.QuerySnapshot
@@ -34,7 +34,7 @@ import javax.inject.Inject
  *
  * @since 0.1
  */
-class QueryLessons @Inject constructor(
+internal class QueryLessons @Inject constructor(
     private val source: PagingSource<QuerySnapshot, Lesson>
 ) {
     operator fun invoke() = source

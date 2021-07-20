@@ -41,7 +41,7 @@ import com.maximapps.page.ui.common.unit.dp
  * @param modifier [Modifier]
  * @since 0.1
  */
-fun image(
+internal fun image(
     context: Context,
     link: String,
     modifier: Modifier = Modifier(
@@ -58,7 +58,7 @@ fun image(
     }
 }
 
-fun ImageView.setLayoutParams(modifier: Modifier) {
+private fun ImageView.setLayoutParams(modifier: Modifier) {
     val (start, top, end, bottom) = modifier.margin
     val params = LinearLayoutCompat.LayoutParams(modifier.width, modifier.height)
     params.setMargins(start, top, end, bottom)

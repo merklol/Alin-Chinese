@@ -40,7 +40,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object PageModule {
+internal object PageModule {
 
     @Provides
     @Singleton

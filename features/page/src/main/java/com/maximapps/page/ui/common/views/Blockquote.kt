@@ -40,7 +40,7 @@ import com.maximapps.page.utils.isDarkTheme
  * @param text the text to display
  * @since 0.1
  */
-fun blockquote(context: Context, text: String) = text(
+internal fun blockquote(context: Context, text: String) = text(
     context = context,
     text = text,
     textStyle = TextStyle(

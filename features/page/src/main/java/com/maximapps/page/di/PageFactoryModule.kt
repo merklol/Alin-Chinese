@@ -37,7 +37,7 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 @Module
 @InstallIn(SingletonComponent::class)
 @ExperimentalCoroutinesApi
-abstract class PageFactoryModule {
+internal abstract class PageFactoryModule {
 
     @Binds
     @IntoMap

@@ -25,6 +25,7 @@
 package com.maximapps.core.data.preferences
 
 import android.content.Context
+import com.maximapps.core.domain.preferences.UserPreferences
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 

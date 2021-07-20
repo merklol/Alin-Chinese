@@ -26,7 +26,7 @@ package com.maximapps.page.ui.page
 
 import androidx.lifecycle.viewModelScope
 import com.maximapps.core.data.models.SharedLesson
-import com.maximapps.core.data.repositories.CrudRepository
+import com.maximapps.core.domain.repositories.CrudRepository
 import com.maximapps.core.domain.toLesson
 import com.maximapps.page.data.ContentParser
 import com.maximapps.page.exceptions.InvalidAlignmentTypeException
@@ -41,7 +41,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class PageViewModel @Inject constructor(
+internal class PageViewModel @Inject constructor(
     private val parser: ContentParser,
     private val crudRepository: CrudRepository,
 ) : AndroidDataFlow(UIState.Empty) {

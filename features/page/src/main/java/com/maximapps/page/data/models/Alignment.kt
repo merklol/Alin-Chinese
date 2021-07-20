@@ -29,7 +29,7 @@ package com.maximapps.page.data.models
  *
  * @since 0.1
  */
-sealed class Alignment {
+internal sealed class Alignment {
     object Start : Alignment()
     object Center : Alignment()
     object End : Alignment()

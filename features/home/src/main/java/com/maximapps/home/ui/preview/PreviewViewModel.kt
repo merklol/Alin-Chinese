@@ -27,14 +27,14 @@ package com.maximapps.home.ui.preview
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.maximapps.core.data.models.SharedLesson
-import com.maximapps.core.data.repositories.CrudRepository
+import com.maximapps.core.domain.repositories.CrudRepository
 import com.maximapps.core.domain.toLesson
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class PreviewViewModel @Inject constructor(
+internal class PreviewViewModel @Inject constructor(
     private val crudRepository: CrudRepository,
 ) : ViewModel() {
 
