@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeGraph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.maximapps.home.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_show_preview_dialog"
+            app:destination="@id/previewFragment"/>
+    </fragment>
+
+    <dialog android:id="@+id/previewFragment"
+        android:name="com.maximapps.home.ui.preview.PreviewFragment"
+        android:label="Preview"
+        tools:layout="@layout/fragment_preview">
+        <action
+            android:id="@+id/action_previewFragment_to_pageFragment"
+            app:destination="@id/pageGraph"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/stationary"
+            app:popEnterAnim="@anim/stationary"
+            app:popExitAnim="@anim/slide_down">
+            <argument
+                android:name="sharedLesson"
+                app:argType="com.maximapps.core.data.models.SharedLesson"
+                app:nullable="true"
+                android:defaultValue="@null"/>
+        </action>
+        <argument
+            android:name="sharedLesson"
+            app:argType="com.maximapps.core.data.models.SharedLesson"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </dialog>
+
+    <include app:graph="@navigation/page_graph" />
+
+</navigation>
