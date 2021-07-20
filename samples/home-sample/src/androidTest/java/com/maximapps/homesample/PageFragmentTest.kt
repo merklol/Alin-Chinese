@@ -40,7 +40,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.filters.MediumTest
 import androidx.test.platform.app.InstrumentationRegistry.getInstrumentation
 import com.maximapps.core.data.models.SharedLesson
-import com.maximapps.core.data.repositories.CrudRepository
+import com.maximapps.core.domain.repositories.CrudRepository
 import com.maximapps.core.data.repositories.DefaultCrudRepository
 import com.maximapps.core.utils.toByteArray
 import com.maximapps.homesample.di.DatabaseModule
