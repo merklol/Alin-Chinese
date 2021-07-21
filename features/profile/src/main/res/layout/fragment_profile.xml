@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment"
+    android:background="?attr/fragmentBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp"
+        android:textColor="?attr/labelColor"
+        android:text="@string/email_label"/>
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="?attr/textButtonColor"
+        android:textSize="16sp"
+        tools:text="admin@gmail.com"/>
+
+    <View
+        android:background="?attr/delimiterColor"
+        android:layout_width ="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="0.5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp"
+        android:textColor="?attr/labelColor"
+        android:text="@string/support_label"/>
+    <TextView
+        android:id="@+id/rateAppView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="16dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="?attr/textButtonColor"
+        android:textSize="16sp"
+        android:text="@string/rate_this_app_btn_text"/>
+    <View
+        android:background="?attr/delimiterColor"
+        android:layout_width ="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="0.5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp"
+        android:textColor="?attr/labelColor"
+        android:text="@string/legal_label"/>
+    <TextView
+        android:id="@+id/privacyPolicyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="16sp"
+        android:textColor="?attr/textButtonColor"
+        android:text="@string/privacy_policy_btn_text"/>
+    <View
+        android:background="?attr/delimiterColor"
+        android:layout_width ="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="0.5dp" />
+    <TextView
+        android:id="@+id/logOutView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="16sp"
+        android:textColor="?attr/logoutButtonColor"
+        android:text="@string/log_out_btn_text"/>
+    <View
+        android:background="?attr/delimiterColor"
+        android:layout_width ="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="0.5dp" />
+    <TextView
+        android:id="@+id/versionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:textColor="?attr/appVersionColor"
+        android:gravity="center"
+        android:textAllCaps="true"
+        tools:text="Version 1.0"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
