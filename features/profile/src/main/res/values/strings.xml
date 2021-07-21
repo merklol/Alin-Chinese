@@ -1,0 +1,13 @@
+<resources>
+    <string name="logout_dialog_title">Logging Out</string>
+    <string name="logout_dialog_message">Are you sure you want to log out now?</string>
+    <string name="logout_dialog_positive_btn_text">OK</string>
+    <string name="logout_dialog_negative_btn_text">Cancel</string>
+    <string name="email_label">Email</string>
+    <string name="support_label">Support</string>
+    <string name="rate_this_app_btn_text">Rate this App</string>
+    <string name="legal_label">Legal</string>
+    <string name="privacy_policy_btn_text">Privacy Policy</string>
+    <string name="log_out_btn_text">Log Out</string>
+    <string name="app_version_name">Version %s</string>
+</resources>
