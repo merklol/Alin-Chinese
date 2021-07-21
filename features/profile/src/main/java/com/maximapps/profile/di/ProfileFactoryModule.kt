@@ -35,7 +35,7 @@ import dagger.multibindings.IntoMap
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class ProfileFactoryModule {
+internal abstract class ProfileFactoryModule {
 
     @Binds
     @IntoMap
