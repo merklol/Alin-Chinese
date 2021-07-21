@@ -7,6 +7,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:defaultNavHost="true"
-    app:navGraph="@navigation/authentication_graph"
-    tools:context=".ui.authentication.AuthenticationFragment"
-    tools:layout="@layout/fragment_login" />
+    app:navGraph="@navigation/favorites_graph"
+    tools:context=".HostActivity"
+    tools:layout="@layout/fragment_favorites" />

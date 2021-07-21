@@ -1,0 +1,4 @@
+<resources>
+    <string name="lesson_list_item_image">List item image</string>
+    <string name="snack_bar_action_text">Undo</string>
+</resources>
