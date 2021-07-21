@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maximapps.favoritessample">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name="com.maximapps.favoritessample.HiltTestActivity"
+            android:exported="false"/>
+    </application>
+</manifest>
