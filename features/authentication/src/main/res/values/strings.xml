@@ -1,0 +1,16 @@
+<resources>
+    <string name="registration_view_title">Create an account</string>
+    <string name="register_btn">Register Now</string>
+    <string name="email_address_hint">Email address</string>
+    <string name="confirm_email_address_hint">Confirm email address</string>
+    <string name="password_hint">Password</string>
+    <string name="logo_content_description">App logo</string>
+    <string name="login_view_title">Welcome to Alin Chinese</string>
+    <string name="log_in_btn">Log In</string>
+    <string name="create_an_account_btn">Create an account</string>
+    <string name="login_label">Already have an account?</string>
+    <string name="invalid_email">Invalid email address."</string>
+    <string name="invalid_password">
+        Password should have at least 6 characters, 1 letter and 1 number.
+    </string>
+</resources>
