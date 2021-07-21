@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Profile Sample</string>
+    <string name="auth_fragment_text">Login Screen</string>
+</resources>
