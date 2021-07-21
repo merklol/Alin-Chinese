@@ -8,5 +8,5 @@
     android:layout_height="match_parent"
     app:defaultNavHost="true"
     app:navGraph="@navigation/authentication_graph"
-    tools:context=".ui.AuthenticationFragment"
+    tools:context=".ui.authentication.AuthenticationFragment"
     tools:layout="@layout/fragment_login" />
