@@ -24,7 +24,7 @@
 
 package com.maximapps.authsample.di
 
-import com.maximapps.authentication.ui.AuthenticationFragmentDirections
+import com.maximapps.authentication.ui.authentication.AuthenticationFragmentDirections
 import com.maximapps.authsample.MainFragmentDirections
 import com.maximapps.authsample.R
 import com.maximapps.core.navigation.GlobalDirections
