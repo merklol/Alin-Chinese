@@ -9,8 +9,8 @@ import dependencies.implementRoomTesting
 plugins {
     id("com.android.application")
     id("kotlin-android")
-//    id("kotlin-kapt")
-//    id("dagger.hilt.android.plugin")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
     id("com.google.gms.google-services")
 }
 
@@ -59,9 +59,6 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.3.1")
     implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
-
-
-
 
     implementRoom()
     implementPaging3()
