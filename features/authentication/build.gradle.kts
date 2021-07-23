@@ -57,7 +57,6 @@ dependencies {
     implementDaggerHilt()
     implementAuthentication()
     implementViewBindingDelegate()
-    implementCoroutinesPlayServices()
 
     implementation(project(":core-ui"))
     implementation(project(":core"))
