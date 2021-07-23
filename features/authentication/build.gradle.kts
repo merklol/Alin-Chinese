@@ -1,6 +1,5 @@
 import dependencies.implementAuthentication
 import dependencies.implementCoroutines
-import dependencies.implementCoroutinesPlayServices
 import dependencies.implementDaggerHilt
 import dependencies.implementNavigation
 import dependencies.implementUniFlow
