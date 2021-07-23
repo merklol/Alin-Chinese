@@ -1,4 +1,3 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
 
     repositories {
@@ -34,6 +33,13 @@ subprojects {
                 destination = file("$rootDir/reports/detekt/detekt.html")
             }
         }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
     }
 }
 
