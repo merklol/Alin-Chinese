@@ -16,6 +16,13 @@ fun Project.configuration(applicationId: String, testInstrumentationRunner: Stri
         }
     }
 
+fun Project.configuration(testInstrumentationRunner: String) =
+    configure<LibraryExtension> {
+        defaultConfig {
+            this.testInstrumentationRunner = testInstrumentationRunner
+        }
+    }
+
 fun Project.configuration(
     applicationId: String,
     testInstrumentationRunner: String,
@@ -33,12 +40,5 @@ fun Project.configuration(
 
         packagingOptions {
             this.jniLibs(jniLibs)
-        }
-    }
-
-fun Project.configuration(testInstrumentationRunner: String) =
-    configure<LibraryExtension> {
-        defaultConfig {
-            this.testInstrumentationRunner = testInstrumentationRunner
         }
     }
