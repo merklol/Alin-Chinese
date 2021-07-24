@@ -26,7 +26,7 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementNavigation() {
+fun DependencyHandlerScope.implementationOfNavigation() {
     "implementation"(
         "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     )

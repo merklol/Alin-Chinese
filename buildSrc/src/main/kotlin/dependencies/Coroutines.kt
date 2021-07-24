@@ -26,7 +26,7 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementCoroutines() {
+fun DependencyHandlerScope.implementationOfCoroutines() {
     "implementation"(
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
     )

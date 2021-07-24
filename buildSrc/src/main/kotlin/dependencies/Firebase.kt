@@ -26,13 +26,13 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementFirestore() {
+fun DependencyHandlerScope.implementationOfFirestore() {
     "implementation"(
         "com.google.firebase:firebase-firestore-ktx:${Versions.firestore}"
     )
 }
 
-fun DependencyHandlerScope.implementAuthentication() {
+fun DependencyHandlerScope.implementationOfAuthentication() {
     "implementation"(
         "com.google.firebase:firebase-auth-ktx:${Versions.authentication}"
     )

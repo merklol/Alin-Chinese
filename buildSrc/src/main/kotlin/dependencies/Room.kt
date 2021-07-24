@@ -26,12 +26,12 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementRoom() {
+fun DependencyHandlerScope.implementationOfRoom() {
     "implementation"("androidx.room:room-runtime:${Versions.room}")
     "implementation"("androidx.room:room-ktx:${Versions.room}")
     "kapt"("androidx.room:room-compiler:${Versions.room}")
 }
 
-fun DependencyHandlerScope.implementRoomTesting() {
+fun DependencyHandlerScope.androidTestImplementationOfRoom() {
     "androidTestImplementation"("androidx.room:room-testing:${Versions.room}")
 }

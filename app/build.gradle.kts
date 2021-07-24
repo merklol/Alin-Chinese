@@ -1,9 +1,9 @@
-import dependencies.implementAuthentication
-import dependencies.implementDaggerHilt
-import dependencies.implementFirestore
-import dependencies.implementNavigation
-import dependencies.implementPaging3
-import dependencies.implementRoom
+import dependencies.implementationOfAuthentication
+import dependencies.implementationOfHilt
+import dependencies.implementationOfFirestore
+import dependencies.implementationOfNavigation
+import dependencies.implementationOfPaging3
+import dependencies.implementationOfRoom
 import extensions.configuration
 
 plugins {
@@ -20,12 +20,12 @@ configuration(
 )
 
 dependencies {
-    implementRoom()
-    implementPaging3()
-    implementFirestore()
-    implementDaggerHilt()
-    implementNavigation()
-    implementAuthentication()
+    implementationOfRoom()
+    implementationOfPaging3()
+    implementationOfFirestore()
+    implementationOfHilt()
+    implementationOfNavigation()
+    implementationOfAuthentication()
 
     implementation(project(":main"))
     implementation(project(":features:home"))

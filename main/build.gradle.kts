@@ -1,8 +1,8 @@
-import dependencies.implementDaggerHilt
-import dependencies.implementFirestore
-import dependencies.implementNavigation
-import dependencies.implementPaging3
-import dependencies.implementViewBindingDelegate
+import dependencies.implementationOfHilt
+import dependencies.implementationOfFirestore
+import dependencies.implementationOfNavigation
+import dependencies.implementationOfPaging3
+import dependencies.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -17,11 +17,11 @@ dependencies {
     implementation(project(":features:profile"))
     implementation(project(":features:favorites"))
 
-    implementPaging3()
-    implementFirestore()
-    implementDaggerHilt()
-    implementNavigation()
-    implementViewBindingDelegate()
+    implementationOfPaging3()
+    implementationOfFirestore()
+    implementationOfHilt()
+    implementationOfNavigation()
+    implementationOfViewBindingDelegate()
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

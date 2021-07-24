@@ -26,6 +26,6 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementGson() {
+fun DependencyHandlerScope.implementationOfGson() {
     "implementation"("com.google.code.gson:gson:${Versions.gson}")
 }

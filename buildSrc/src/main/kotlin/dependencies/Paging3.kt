@@ -26,6 +26,6 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementPaging3() {
+fun DependencyHandlerScope.implementationOfPaging3() {
     "implementation"("androidx.paging:paging-runtime-ktx:${Versions.paging3}")
 }

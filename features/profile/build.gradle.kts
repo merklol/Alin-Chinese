@@ -1,6 +1,6 @@
-import dependencies.implementDaggerHilt
-import dependencies.implementNavigation
-import dependencies.implementViewBindingDelegate
+import dependencies.implementationOfHilt
+import dependencies.implementationOfNavigation
+import dependencies.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -9,9 +9,9 @@ plugins {
 }
 
 dependencies {
-    implementNavigation()
-    implementDaggerHilt()
-    implementViewBindingDelegate()
+    implementationOfNavigation()
+    implementationOfHilt()
+    implementationOfViewBindingDelegate()
 
     implementation(project(":core-ui"))
     implementation(project(":core"))

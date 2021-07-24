@@ -26,7 +26,7 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementMockk() {
+fun DependencyHandlerScope.implementationOfMockk() {
     "testImplementation"("io.mockk:mockk:${Versions.mockK}")
     "androidTestImplementation"("io.mockk:mockk-android:${Versions.mockK}")
 }

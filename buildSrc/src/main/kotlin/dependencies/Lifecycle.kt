@@ -26,7 +26,7 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementLifecycle() {
+fun DependencyHandlerScope.implementationOfLifecycle() {
     "implementation"(
         "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
     )

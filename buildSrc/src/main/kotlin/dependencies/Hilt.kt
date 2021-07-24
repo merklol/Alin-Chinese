@@ -2,7 +2,7 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementDaggerHilt() {
+fun DependencyHandlerScope.implementationOfHilt() {
     "implementation"("com.google.dagger:hilt-android:${Versions.hilt}")
     "kapt"("com.google.dagger:hilt-compiler:${Versions.hilt}")
 

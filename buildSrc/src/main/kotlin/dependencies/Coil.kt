@@ -26,6 +26,6 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementCoil() {
+fun DependencyHandlerScope.implementationOfCoil() {
     "implementation"("io.coil-kt:coil:${Versions.coil}")
 }

@@ -1,12 +1,12 @@
-import dependencies.implementCoil
-import dependencies.implementCoroutines
-import dependencies.implementDaggerHilt
-import dependencies.implementFirestore
-import dependencies.implementLifecycle
-import dependencies.implementNavigation
-import dependencies.implementPaging3
-import dependencies.implementRoomTesting
-import dependencies.implementViewBindingDelegate
+import dependencies.implementationOfCoil
+import dependencies.implementationOfCoroutines
+import dependencies.implementationOfHilt
+import dependencies.implementationOfFirestore
+import dependencies.implementationOfLifecycle
+import dependencies.implementationOfNavigation
+import dependencies.implementationOfPaging3
+import dependencies.androidTestImplementationOfRoom
+import dependencies.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -20,15 +20,15 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":features:page"))
 
-    implementCoil()
-    implementPaging3()
-    implementFirestore()
-    implementLifecycle()
-    implementCoroutines()
-    implementDaggerHilt()
-    implementNavigation()
-    implementViewBindingDelegate()
+    implementationOfCoil()
+    implementationOfPaging3()
+    implementationOfFirestore()
+    implementationOfLifecycle()
+    implementationOfCoroutines()
+    implementationOfHilt()
+    implementationOfNavigation()
+    implementationOfViewBindingDelegate()
 
-    implementRoomTesting()
+    androidTestImplementationOfRoom()
     testImplementation("junit:junit:4.13.2")
 }

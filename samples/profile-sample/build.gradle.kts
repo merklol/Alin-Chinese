@@ -1,5 +1,5 @@
-import dependencies.implementDaggerHilt
-import dependencies.implementNavigation
+import dependencies.implementationOfHilt
+import dependencies.implementationOfNavigation
 import extensions.configuration
 
 plugins {
@@ -15,8 +15,8 @@ configuration(
 )
 
 dependencies {
-    implementDaggerHilt()
-    implementNavigation()
+    implementationOfHilt()
+    implementationOfNavigation()
 
     implementation(project(":core-ui"))
     implementation(project(":features:profile"))

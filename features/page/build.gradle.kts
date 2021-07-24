@@ -1,10 +1,10 @@
-import dependencies.implementCoil
-import dependencies.implementDaggerHilt
-import dependencies.implementGson
-import dependencies.implementNavigation
-import dependencies.implementRoomTesting
-import dependencies.implementUniFlow
-import dependencies.implementViewBindingDelegate
+import dependencies.implementationOfCoil
+import dependencies.implementationOfHilt
+import dependencies.implementationOfGson
+import dependencies.implementationOfNavigation
+import dependencies.androidTestImplementationOfRoom
+import dependencies.implementationOfUniFlow
+import dependencies.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -14,16 +14,16 @@ plugins {
 }
 
 dependencies {
-    implementCoil()
-    implementGson()
-    implementUniFlow()
-    implementDaggerHilt()
-    implementNavigation()
-    implementViewBindingDelegate()
+    implementationOfCoil()
+    implementationOfGson()
+    implementationOfUniFlow()
+    implementationOfHilt()
+    implementationOfNavigation()
+    implementationOfViewBindingDelegate()
 
     implementation(project(":core-ui"))
     implementation(project(":core"))
 
-    implementRoomTesting()
+    androidTestImplementationOfRoom()
     testImplementation("junit:junit:4.13.2")
 }

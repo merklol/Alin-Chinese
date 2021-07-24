@@ -1,10 +1,10 @@
-import dependencies.implementDaggerHilt
-import dependencies.implementFirestore
-import dependencies.implementMockk
-import dependencies.implementNavigation
-import dependencies.implementPaging3
-import dependencies.implementRoom
-import dependencies.implementRoomTesting
+import dependencies.implementationOfHilt
+import dependencies.implementationOfFirestore
+import dependencies.implementationOfMockk
+import dependencies.implementationOfNavigation
+import dependencies.implementationOfPaging3
+import dependencies.implementationOfRoom
+import dependencies.androidTestImplementationOfRoom
 import extensions.configuration
 
 plugins {
@@ -26,19 +26,19 @@ configuration(
 )
 
 dependencies {
-    implementRoom()
-    implementPaging3()
-    implementFirestore()
-    implementDaggerHilt()
-    implementNavigation()
+    implementationOfRoom()
+    implementationOfPaging3()
+    implementationOfFirestore()
+    implementationOfHilt()
+    implementationOfNavigation()
 
     implementation(project(":core"))
     implementation(project(":core-ui"))
     implementation(project(":features:home"))
     implementation(project(":features:page"))
 
-    implementMockk()
-    implementRoomTesting()
+    implementationOfMockk()
+    androidTestImplementationOfRoom()
 
     androidTestImplementation(project(":test-utils"))
     debugImplementation("androidx.fragment:fragment-testing:1.3.6")

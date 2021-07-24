@@ -1,7 +1,7 @@
-import dependencies.implementAuthentication
-import dependencies.implementDaggerHilt
-import dependencies.implementMockk
-import dependencies.implementNavigation
+import dependencies.implementationOfAuthentication
+import dependencies.implementationOfHilt
+import dependencies.implementationOfMockk
+import dependencies.implementationOfNavigation
 import extensions.configuration
 
 plugins {
@@ -24,15 +24,15 @@ configuration(
 )
 
 dependencies {
-    implementAuthentication()
-    implementDaggerHilt()
-    implementNavigation()
+    implementationOfAuthentication()
+    implementationOfHilt()
+    implementationOfNavigation()
 
     implementation(project(":core"))
     implementation(project(":core-ui"))
     implementation(project(":features:authentication"))
 
-    implementMockk()
+    implementationOfMockk()
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation(project(":test-utils"))
     debugImplementation("androidx.fragment:fragment-testing:1.3.6")

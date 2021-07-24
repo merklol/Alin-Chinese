@@ -1,9 +1,9 @@
-import dependencies.implementAuthentication
-import dependencies.implementCoroutines
-import dependencies.implementDaggerHilt
-import dependencies.implementNavigation
-import dependencies.implementUniFlow
-import dependencies.implementViewBindingDelegate
+import dependencies.implementationOfAuthentication
+import dependencies.implementationOfCoroutines
+import dependencies.implementationOfHilt
+import dependencies.implementationOfNavigation
+import dependencies.implementationOfUniFlow
+import dependencies.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -13,12 +13,12 @@ plugins {
 }
 
 dependencies {
-    implementUniFlow()
-    implementNavigation()
-    implementCoroutines()
-    implementDaggerHilt()
-    implementAuthentication()
-    implementViewBindingDelegate()
+    implementationOfUniFlow()
+    implementationOfNavigation()
+    implementationOfCoroutines()
+    implementationOfHilt()
+    implementationOfAuthentication()
+    implementationOfViewBindingDelegate()
 
     implementation(project(":core-ui"))
     implementation(project(":core"))

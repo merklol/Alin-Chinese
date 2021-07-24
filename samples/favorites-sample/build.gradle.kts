@@ -1,6 +1,6 @@
-import dependencies.implementDaggerHilt
-import dependencies.implementMockk
-import dependencies.implementNavigation
+import dependencies.implementationOfHilt
+import dependencies.implementationOfMockk
+import dependencies.implementationOfNavigation
 import extensions.configuration
 
 plugins {
@@ -21,8 +21,8 @@ configuration(
 )
 
 dependencies {
-    implementNavigation()
-    implementDaggerHilt()
+    implementationOfNavigation()
+    implementationOfHilt()
 
     implementation(project(":core"))
     implementation(project(":core-ui"))
@@ -31,7 +31,7 @@ dependencies {
 
     testImplementation("junit:junit:4.13.2")
 
-    implementMockk()
+    implementationOfMockk()
     androidTestImplementation(project(":test-utils"))
     debugImplementation("androidx.fragment:fragment-testing:1.3.6")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

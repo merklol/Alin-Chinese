@@ -26,7 +26,7 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementViewBindingDelegate() {
+fun DependencyHandlerScope.implementationOfViewBindingDelegate() {
     "implementation"(
         "com.github.kirich1409:viewbindingpropertydelegate:${
             Versions.viewBindingDelegate

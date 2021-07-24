@@ -1,6 +1,6 @@
-import dependencies.implementDaggerHilt
-import dependencies.implementNavigation
-import dependencies.implementRoom
+import dependencies.implementationOfHilt
+import dependencies.implementationOfNavigation
+import dependencies.implementationOfRoom
 
 plugins {
     `android-library-convention`
@@ -10,7 +10,7 @@ plugins {
 }
 
 dependencies {
-    implementRoom()
-    implementDaggerHilt()
-    implementNavigation()
+    implementationOfRoom()
+    implementationOfHilt()
+    implementationOfNavigation()
 }

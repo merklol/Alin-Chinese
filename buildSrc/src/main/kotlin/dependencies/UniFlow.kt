@@ -26,7 +26,7 @@ package dependencies
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-fun DependencyHandlerScope.implementUniFlow() {
+fun DependencyHandlerScope.implementationOfUniFlow() {
     "implementation"("org.uniflow-kt:uniflow-core:${Versions.uniFlow}")
     "implementation"("org.uniflow-kt:uniflow-android:${Versions.uniFlow}")
     "testImplementation"("org.uniflow-kt:uniflow-test:${Versions.uniFlow}")
