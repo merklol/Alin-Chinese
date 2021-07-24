@@ -1,3 +1,3 @@
 plugins {
-    `android-feature-convention`
+    `android-library-convention`
 }

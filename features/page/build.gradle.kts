@@ -7,7 +7,7 @@ import dependencies.implementUniFlow
 import dependencies.implementViewBindingDelegate
 
 plugins {
-    `android-feature-convention`
+    `android-library-convention`
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     id("androidx.navigation.safeargs.kotlin")

@@ -3,7 +3,7 @@ import dependencies.implementNavigation
 import dependencies.implementRoom
 
 plugins {
-    `android-feature-convention`
+    `android-library-convention`
     id("kotlin-parcelize")
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")

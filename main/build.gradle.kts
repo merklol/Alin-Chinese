@@ -5,7 +5,7 @@ import dependencies.implementPaging3
 import dependencies.implementViewBindingDelegate
 
 plugins {
-    `android-feature-convention`
+    `android-library-convention`
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
 }
