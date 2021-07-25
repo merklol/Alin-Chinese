@@ -37,11 +37,11 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    compileSdk = 30
+    compileSdk = AppConfiguration.CompileSdk
 
     defaultConfig {
-        minSdk = 23
-        targetSdk = 30
+        minSdk = AppConfiguration.MinSdk
+        targetSdk = AppConfiguration.TargetSdk
         consumerProguardFiles("consumer-rules.pro")
     }
 
