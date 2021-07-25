@@ -23,7 +23,6 @@
  */
 
 import com.android.build.gradle.LibraryExtension
-import gradle.kotlin.dsl.accessors._7c271eebf31aea983623dfec31c230a6.implementation
 
 /**
  * Gradle convention plugin for Android library modules.
