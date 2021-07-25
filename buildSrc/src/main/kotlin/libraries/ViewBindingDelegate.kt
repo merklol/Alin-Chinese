@@ -22,14 +22,19 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds a view binding delegate to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfViewBindingDelegate() {
     "implementation"(
         "com.github.kirich1409:viewbindingpropertydelegate:${
-            Versions.viewBindingDelegate
+            LibraryVersions.ViewBindingDelegate
         }"
     )
 }

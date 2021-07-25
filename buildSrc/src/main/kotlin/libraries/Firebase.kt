@@ -22,18 +22,28 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds the Cloud Firestore to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfFirestore() {
     "implementation"(
-        "com.google.firebase:firebase-firestore-ktx:${Versions.firestore}"
+        "com.google.firebase:firebase-firestore-ktx:${LibraryVersions.Firestore}"
     )
 }
 
+/**
+ * Adds the Firebase Authentication to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfAuthentication() {
     "implementation"(
-        "com.google.firebase:firebase-auth-ktx:${Versions.authentication}"
+        "com.google.firebase:firebase-auth-ktx:${LibraryVersions.Authentication}"
     )
 }

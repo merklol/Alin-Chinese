@@ -22,16 +22,26 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds the Room persistence library to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfRoom() {
-    "implementation"("androidx.room:room-runtime:${Versions.room}")
-    "implementation"("androidx.room:room-ktx:${Versions.room}")
-    "kapt"("androidx.room:room-compiler:${Versions.room}")
+    "implementation"("androidx.room:room-runtime:${LibraryVersions.Room}")
+    "implementation"("androidx.room:room-ktx:${LibraryVersions.Room}")
+    "kapt"("androidx.room:room-compiler:${LibraryVersions.Room}")
 }
 
+/**
+ * Adds the Room persistence library to the test configuration of the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.androidTestImplementationOfRoom() {
-    "androidTestImplementation"("androidx.room:room-testing:${Versions.room}")
+    "androidTestImplementation"("androidx.room:room-testing:${LibraryVersions.Room}")
 }

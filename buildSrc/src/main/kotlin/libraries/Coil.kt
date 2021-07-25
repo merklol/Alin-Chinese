@@ -22,10 +22,15 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds the Coil image loading library to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfCoil() {
-    "implementation"("io.coil-kt:coil:${Versions.coil}")
+    "implementation"("io.coil-kt:coil:${LibraryVersions.Coil}")
 }

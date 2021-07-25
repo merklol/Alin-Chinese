@@ -22,18 +22,23 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds live data Kotlin extensions to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfLifecycle() {
     "implementation"(
-        "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
+        "androidx.lifecycle:lifecycle-livedata-ktx:${LibraryVersions.Lifecycle}"
     )
     "implementation"(
-        "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
+        "androidx.lifecycle:lifecycle-runtime-ktx:${LibraryVersions.Lifecycle}"
     )
     "implementation"(
-        "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+        "androidx.lifecycle:lifecycle-viewmodel-ktx:${LibraryVersions.Lifecycle}"
     )
 }

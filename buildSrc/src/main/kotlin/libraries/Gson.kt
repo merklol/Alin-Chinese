@@ -22,10 +22,15 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds the Gson library to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfGson() {
-    "implementation"("com.google.code.gson:gson:${Versions.gson}")
+    "implementation"("com.google.code.gson:gson:${LibraryVersions.Gson}")
 }

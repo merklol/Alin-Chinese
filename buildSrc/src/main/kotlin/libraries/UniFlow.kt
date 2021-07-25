@@ -22,13 +22,18 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds a simple unidirectional data flow to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfUniFlow() {
-    "implementation"("org.uniflow-kt:uniflow-core:${Versions.uniFlow}")
-    "implementation"("org.uniflow-kt:uniflow-android:${Versions.uniFlow}")
-    "testImplementation"("org.uniflow-kt:uniflow-test:${Versions.uniFlow}")
-    "testImplementation"("org.uniflow-kt:uniflow-android-test:${Versions.uniFlow}")
+    "implementation"("org.uniflow-kt:uniflow-core:${LibraryVersions.UniFlow}")
+    "implementation"("org.uniflow-kt:uniflow-android:${LibraryVersions.UniFlow}")
+    "testImplementation"("org.uniflow-kt:uniflow-test:${LibraryVersions.UniFlow}")
+    "testImplementation"("org.uniflow-kt:uniflow-android-test:${LibraryVersions.UniFlow}")
 }

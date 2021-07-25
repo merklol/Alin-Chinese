@@ -22,15 +22,20 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds the Navigation component to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfNavigation() {
     "implementation"(
-        "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+        "androidx.navigation:navigation-fragment-ktx:${LibraryVersions.Navigation}"
     )
     "implementation"(
-        "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+        "androidx.navigation:navigation-ui-ktx:${LibraryVersions.Navigation}"
     )
 }

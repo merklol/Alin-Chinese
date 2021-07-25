@@ -22,10 +22,15 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds the Paging3 library to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfPaging3() {
-    "implementation"("androidx.paging:paging-runtime-ktx:${Versions.paging3}")
+    "implementation"("androidx.paging:paging-runtime-ktx:${LibraryVersions.Paging3}")
 }

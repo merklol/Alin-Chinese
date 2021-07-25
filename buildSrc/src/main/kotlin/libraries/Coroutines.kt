@@ -22,20 +22,25 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds Kotlin coroutines to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfCoroutines() {
     "implementation"(
-        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${LibraryVersions.Coroutines}"
     )
     "implementation"(
-        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${LibraryVersions.Coroutines}"
     )
     "implementation"(
         "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:${
-            Versions.coroutines
+            LibraryVersions.Coroutines
         }"
     )
 }

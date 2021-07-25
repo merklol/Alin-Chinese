@@ -22,11 +22,16 @@
  * SOFTWARE.
  */
 
-package dependencies
+package libraries
 
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
+/**
+ * Adds the Mockk library to the project.
+ *
+ * @since 0.5.2
+ */
 fun DependencyHandlerScope.implementationOfMockk() {
-    "testImplementation"("io.mockk:mockk:${Versions.mockK}")
-    "androidTestImplementation"("io.mockk:mockk-android:${Versions.mockK}")
+    "testImplementation"("io.mockk:mockk:${LibraryVersions.MockK}")
+    "androidTestImplementation"("io.mockk:mockk-android:${LibraryVersions.MockK}")
 }
