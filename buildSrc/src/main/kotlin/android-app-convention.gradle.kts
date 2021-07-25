@@ -36,13 +36,13 @@ plugins {
 }
 
 configure<BaseAppModuleExtension> {
-    compileSdk = 30
+    compileSdk = AppConfiguration.CompileSdk
 
     defaultConfig {
-        minSdk = 23
-        targetSdk = 30
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = AppConfiguration.MinSdk
+        targetSdk = AppConfiguration.TargetSdk
+        versionCode = AppConfiguration.VersionCode
+        versionName = AppConfiguration.VersionName
     }
 
     buildTypes {
