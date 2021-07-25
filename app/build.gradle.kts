@@ -1,9 +1,9 @@
-import dependencies.implementationOfAuthentication
-import dependencies.implementationOfHilt
-import dependencies.implementationOfFirestore
-import dependencies.implementationOfNavigation
-import dependencies.implementationOfPaging3
-import dependencies.implementationOfRoom
+import libraries.implementationOfAuthentication
+import libraries.implementationOfHilt
+import libraries.implementationOfFirestore
+import libraries.implementationOfNavigation
+import libraries.implementationOfPaging3
+import libraries.implementationOfRoom
 import extensions.configuration
 
 plugins {
@@ -20,19 +20,19 @@ configuration(
 )
 
 dependencies {
+    implementation(project(Modules.Core))
+    implementation(project(Modules.CoreUI))
+    implementation(project(Features.Main))
+    implementation(project(Features.Home))
+    implementation(project(Features.Page))
+    implementation(project(Features.Profile))
+    implementation(project(Features.Favorites))
+    implementation(project(Features.Authentication))
+
     implementationOfRoom()
+    implementationOfHilt()
     implementationOfPaging3()
     implementationOfFirestore()
-    implementationOfHilt()
     implementationOfNavigation()
     implementationOfAuthentication()
-
-    implementation(project(":main"))
-    implementation(project(":features:home"))
-    implementation(project(":features:page"))
-    implementation(project(":core"))
-    implementation(project(":features:profile"))
-    implementation(project(":core-ui"))
-    implementation(project(":features:favorites"))
-    implementation(project(":features:authentication"))
 }

@@ -1,7 +1,8 @@
-import dependencies.implementationOfHilt
-import dependencies.androidTestImplementationOfRoom
-import dependencies.implementationOfUniFlow
-import dependencies.implementationOfViewBindingDelegate
+import libraries.implementationOfHilt
+import libraries.androidTestImplementationOfRoom
+import libraries.implementationOfNavigation
+import libraries.implementationOfUniFlow
+import libraries.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -11,18 +12,15 @@ plugins {
 }
 
 dependencies {
+    implementation(project(Modules.Core))
+    implementation(project(Modules.CoreUI))
+    implementation(project(Features.Page))
+
     implementationOfHilt()
-    implementationOfViewBindingDelegate()
     implementationOfUniFlow()
+    implementationOfNavigation()
+    implementationOfViewBindingDelegate()
 
-    implementation(project(":core-ui"))
-    implementation(project(":core"))
-    implementation(project(":features:page"))
-
+    testImplementation(StandardLibraries.JUnit)
     androidTestImplementationOfRoom()
-    
-    implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
-    implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
-
-    testImplementation("junit:junit:4.13.2")
 }

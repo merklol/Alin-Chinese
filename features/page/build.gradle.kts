@@ -1,10 +1,10 @@
-import dependencies.implementationOfCoil
-import dependencies.implementationOfHilt
-import dependencies.implementationOfGson
-import dependencies.implementationOfNavigation
-import dependencies.androidTestImplementationOfRoom
-import dependencies.implementationOfUniFlow
-import dependencies.implementationOfViewBindingDelegate
+import libraries.implementationOfCoil
+import libraries.implementationOfHilt
+import libraries.implementationOfGson
+import libraries.implementationOfNavigation
+import libraries.androidTestImplementationOfRoom
+import libraries.implementationOfUniFlow
+import libraries.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -14,6 +14,9 @@ plugins {
 }
 
 dependencies {
+    implementation(project(Modules.Core))
+    implementation(project(Modules.CoreUI))
+
     implementationOfCoil()
     implementationOfGson()
     implementationOfUniFlow()
@@ -21,9 +24,6 @@ dependencies {
     implementationOfNavigation()
     implementationOfViewBindingDelegate()
 
-    implementation(project(":core-ui"))
-    implementation(project(":core"))
-
+    testImplementation(StandardLibraries.JUnit)
     androidTestImplementationOfRoom()
-    testImplementation("junit:junit:4.13.2")
 }

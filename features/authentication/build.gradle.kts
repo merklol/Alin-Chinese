@@ -1,9 +1,9 @@
-import dependencies.implementationOfAuthentication
-import dependencies.implementationOfCoroutines
-import dependencies.implementationOfHilt
-import dependencies.implementationOfNavigation
-import dependencies.implementationOfUniFlow
-import dependencies.implementationOfViewBindingDelegate
+import libraries.implementationOfAuthentication
+import libraries.implementationOfCoroutines
+import libraries.implementationOfHilt
+import libraries.implementationOfNavigation
+import libraries.implementationOfUniFlow
+import libraries.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -13,15 +13,15 @@ plugins {
 }
 
 dependencies {
+    implementation(project(Modules.Core))
+    implementation(project(Modules.CoreUI))
+
+    implementationOfHilt()
     implementationOfUniFlow()
     implementationOfNavigation()
     implementationOfCoroutines()
-    implementationOfHilt()
     implementationOfAuthentication()
     implementationOfViewBindingDelegate()
 
-    implementation(project(":core-ui"))
-    implementation(project(":core"))
-
-    testImplementation("junit:junit:4.13.2")
+    testImplementation(StandardLibraries.JUnit)
 }

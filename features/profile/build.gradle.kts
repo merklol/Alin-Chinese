@@ -1,6 +1,6 @@
-import dependencies.implementationOfHilt
-import dependencies.implementationOfNavigation
-import dependencies.implementationOfViewBindingDelegate
+import libraries.implementationOfHilt
+import libraries.implementationOfNavigation
+import libraries.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -9,10 +9,10 @@ plugins {
 }
 
 dependencies {
-    implementationOfNavigation()
-    implementationOfHilt()
-    implementationOfViewBindingDelegate()
+    implementation(project(Modules.Core))
+    implementation(project(Modules.CoreUI))
 
-    implementation(project(":core-ui"))
-    implementation(project(":core"))
+    implementationOfHilt()
+    implementationOfNavigation()
+    implementationOfViewBindingDelegate()
 }

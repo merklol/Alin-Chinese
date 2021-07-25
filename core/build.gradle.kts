@@ -1,6 +1,6 @@
-import dependencies.implementationOfHilt
-import dependencies.implementationOfNavigation
-import dependencies.implementationOfRoom
+import libraries.implementationOfHilt
+import libraries.implementationOfNavigation
+import libraries.implementationOfRoom
 
 plugins {
     `android-library-convention`

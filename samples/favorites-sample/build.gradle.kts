@@ -1,6 +1,6 @@
-import dependencies.implementationOfHilt
-import dependencies.implementationOfMockk
-import dependencies.implementationOfNavigation
+import libraries.implementationOfHilt
+import libraries.implementationOfMockk
+import libraries.implementationOfNavigation
 import extensions.configuration
 
 plugins {
@@ -21,21 +21,20 @@ configuration(
 )
 
 dependencies {
+    implementation(project(Modules.Core))
+    implementation(project(Modules.CoreUI))
+    implementation(project(Features.Page))
+    implementation(project(Features.Favorites))
+
     implementationOfNavigation()
     implementationOfHilt()
 
-    implementation(project(":core"))
-    implementation(project(":core-ui"))
-    implementation(project(":features:page"))
-    implementation(project(":features:favorites"))
-
-    testImplementation("junit:junit:4.13.2")
-
     implementationOfMockk()
-    androidTestImplementation(project(":test-utils"))
-    debugImplementation("androidx.fragment:fragment-testing:1.3.6")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("androidx.navigation:navigation-testing:2.3.5")
-    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.4.0")
+    debugImplementation(StandardLibraries.FragmentTesting)
+
+    androidTestImplementation(project(Modules.TestUtils))
+    androidTestImplementation(StandardLibraries.AndroidXJunit)
+    androidTestImplementation(StandardLibraries.EspressoCore)
+    androidTestImplementation(StandardLibraries.EspressoContrib)
+    androidTestImplementation(StandardLibraries.NavigationTesting)
 }

@@ -1,12 +1,12 @@
-import dependencies.implementationOfCoil
-import dependencies.implementationOfCoroutines
-import dependencies.implementationOfHilt
-import dependencies.implementationOfFirestore
-import dependencies.implementationOfLifecycle
-import dependencies.implementationOfNavigation
-import dependencies.implementationOfPaging3
-import dependencies.androidTestImplementationOfRoom
-import dependencies.implementationOfViewBindingDelegate
+import libraries.implementationOfCoil
+import libraries.implementationOfCoroutines
+import libraries.implementationOfHilt
+import libraries.implementationOfFirestore
+import libraries.implementationOfLifecycle
+import libraries.implementationOfNavigation
+import libraries.implementationOfPaging3
+import libraries.androidTestImplementationOfRoom
+import libraries.implementationOfViewBindingDelegate
 
 plugins {
     `android-library-convention`
@@ -16,19 +16,19 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":core-ui"))
-    implementation(project(":core"))
-    implementation(project(":features:page"))
+    implementation(project(Modules.Core))
+    implementation(project(Modules.CoreUI))
+    implementation(project(Features.Page))
 
+    implementationOfHilt()
     implementationOfCoil()
     implementationOfPaging3()
     implementationOfFirestore()
     implementationOfLifecycle()
     implementationOfCoroutines()
-    implementationOfHilt()
     implementationOfNavigation()
     implementationOfViewBindingDelegate()
 
+    testImplementation(StandardLibraries.JUnit)
     androidTestImplementationOfRoom()
-    testImplementation("junit:junit:4.13.2")
 }

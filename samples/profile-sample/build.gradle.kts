@@ -1,5 +1,5 @@
-import dependencies.implementationOfHilt
-import dependencies.implementationOfNavigation
+import libraries.implementationOfHilt
+import libraries.implementationOfNavigation
 import extensions.configuration
 
 plugins {
@@ -15,14 +15,10 @@ configuration(
 )
 
 dependencies {
+    implementation(project(Modules.Core))
+    implementation(project(Modules.CoreUI))
+    implementation(project(Features.Profile))
+
     implementationOfHilt()
     implementationOfNavigation()
-
-    implementation(project(":core-ui"))
-    implementation(project(":features:profile"))
-    implementation(project(":core"))
-
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 }

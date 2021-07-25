@@ -1,10 +1,10 @@
-import dependencies.implementationOfHilt
-import dependencies.implementationOfFirestore
-import dependencies.implementationOfMockk
-import dependencies.implementationOfNavigation
-import dependencies.implementationOfPaging3
-import dependencies.implementationOfRoom
-import dependencies.androidTestImplementationOfRoom
+import libraries.implementationOfHilt
+import libraries.implementationOfFirestore
+import libraries.implementationOfMockk
+import libraries.implementationOfNavigation
+import libraries.implementationOfPaging3
+import libraries.implementationOfRoom
+import libraries.androidTestImplementationOfRoom
 import extensions.configuration
 
 plugins {
@@ -26,24 +26,24 @@ configuration(
 )
 
 dependencies {
+    implementation(project(Modules.Core))
+    implementation(project(Modules.CoreUI))
+    implementation(project(Features.Home))
+    implementation(project(Features.Page))
+
     implementationOfRoom()
     implementationOfPaging3()
     implementationOfFirestore()
     implementationOfHilt()
     implementationOfNavigation()
 
-    implementation(project(":core"))
-    implementation(project(":core-ui"))
-    implementation(project(":features:home"))
-    implementation(project(":features:page"))
-
     implementationOfMockk()
-    androidTestImplementationOfRoom()
+    debugImplementation(StandardLibraries.FragmentTesting)
 
-    androidTestImplementation(project(":test-utils"))
-    debugImplementation("androidx.fragment:fragment-testing:1.3.6")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.4.0")
-    androidTestImplementation("androidx.navigation:navigation-testing:2.3.5")
+    androidTestImplementationOfRoom()
+    androidTestImplementation(project(Modules.TestUtils))
+    androidTestImplementation(StandardLibraries.AndroidXJunit)
+    androidTestImplementation(StandardLibraries.EspressoCore)
+    androidTestImplementation(StandardLibraries.EspressoContrib)
+    androidTestImplementation(StandardLibraries.NavigationTesting)
 }
