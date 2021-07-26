@@ -1,19 +1,7 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath("com.android.tools.build:gradle:7.1.0-alpha03")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30-M1")
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.37")
-        classpath("com.google.gms:google-services:4.3.8")
-        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5")
-    }
-}
-
 plugins {
+    id("dagger.hilt.android.plugin") version "2.37" apply false
+    id("com.google.gms.google-services") version "4.3.8" apply false
+    id("androidx.navigation.safeargs") version "2.3.5" apply false
     id("io.gitlab.arturbosch.detekt") version "1.17.0"
 }
 
