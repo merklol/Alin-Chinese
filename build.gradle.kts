@@ -1,7 +1,4 @@
 plugins {
-    id("com.android.application") apply false
-    id("com.android.library") apply false
-    kotlin("android") apply false
     id("dagger.hilt.android.plugin") version "2.37" apply false
     id("com.google.gms.google-services") version "4.3.8" apply false
     id("androidx.navigation.safeargs") version "2.3.5" apply false
@@ -39,9 +36,4 @@ tasks.withType<io.gitlab.arturbosch.detekt.Detekt>().configureEach {
 
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
-}
-buildscript {
-    dependencies {
-        classpath("com.android.tools.build:gradle:7.1.0-alpha03")
-    }
 }
