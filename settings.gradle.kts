@@ -1,3 +1,31 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "dagger.hilt.android.plugin")
+                useModule(
+                    "com.google.dagger:hilt-android-gradle-plugin:${
+                        requested.version
+                    }"
+                )
+
+            if (requested.id.id == "com.google.gms.google-services")
+                useModule("com.google.gms:google-services:${requested.version}")
+
+            if (requested.id.id == "androidx.navigation.safeargs")
+                useModule(
+                    "androidx.navigation:navigation-safe-args-gradle-plugin:${
+                        requested.version
+                    }"
+                )
+        }
+    }
+}
 rootProject.name = "Alin Chinese"
 
 include(":app")
