@@ -1,4 +1,7 @@
 plugins {
+    id("com.android.application") apply false
+    id("com.android.library") apply false
+    kotlin("android") apply false
     id("dagger.hilt.android.plugin") version "2.37" apply false
     id("com.google.gms.google-services") version "4.3.8" apply false
     id("androidx.navigation.safeargs") version "2.3.5" apply false
