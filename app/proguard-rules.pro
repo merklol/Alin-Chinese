@@ -19,3 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keepnames class * extends android.os.Parcelable
+-keepclassmembers class com.maximapps.home.data.models.Source { *; }
+-keepclassmembers class com.maximapps.page.data.models.** { *; }
+-keep,allowoptimization class * implements androidx.viewbinding.ViewBinding {
+    public static *** bind(android.view.View);
+}
