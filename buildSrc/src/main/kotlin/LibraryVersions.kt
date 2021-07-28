@@ -42,7 +42,7 @@ object LibraryVersions {
     const val AppCompat = "1.3.1"
     const val Firestore = "21.4.3"
     const val Navigation = "2.3.5"
-    const val Lifecycle = "2.4.0-alpha01"
+    const val Lifecycle = "2.4.0-alpha02"
     const val Coroutines = "1.5.0-RC"
     const val AndroidXJunit = "1.1.3"
     const val Authentication = "21.0.1"
