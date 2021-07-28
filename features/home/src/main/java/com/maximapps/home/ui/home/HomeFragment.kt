@@ -30,7 +30,8 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.addRepeatingJob
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.paging.CombinedLoadStates
 import androidx.paging.LoadState
 import by.kirich1409.viewbindingdelegate.viewBinding
@@ -44,6 +45,7 @@ import com.maximapps.home.ui.lessonlist.LessonListLoadStateAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -73,8 +75,10 @@ class HomeFragment @Inject constructor() : Fragment(R.layout.fragment_home) {
             navigate(HomeFragmentDirections.actionShowPreviewDialog(it))
         }
 
-        addRepeatingJob(Lifecycle.State.STARTED) {
-            viewModel.lessons.collectLatest(adapter::submitData)
+        lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.lessons.collectLatest(adapter::submitData)
+            }
         }
     }
 
