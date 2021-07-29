@@ -25,7 +25,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 
 ## Architecture
 
-AlinChinese is based on Multi-Module Clean Architecture using Unidirectional Data Flow in the presentation layer.
+AlinChinese is based on Multi-Module Clean Architecture using Unidirectional Data Flow(MVI) in the presentation layer.
 
 ![diagram](images/arch_diagram.png)
 
