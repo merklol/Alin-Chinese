@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">  
-AlinChinese is a good start for people who learn Chinese or are curious about the Chinese language.<br>It has summarized, for you, all the key points of Chinese grammar (patterns/words/expressions) that beginners need to master in the first stage, which is concise and easy to understand.
+Alin Chinese is a good start for people who learn Chinese or are curious about the Chinese language.<br>It has summarized, for you, all the key points of Chinese grammar (patterns/words/expressions) that beginners need to master in the first stage, which is concise and easy to understand.
 </p>
 
 <p align="center">
@@ -17,7 +17,39 @@ AlinChinese is a good start for people who learn Chinese or are curious about th
 
 ## Tech stack & Open-source libraries
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+### Language
+
+- [Kotlin](https://kotlinlang.org)
+- [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) & [Flow](https://kotlinlang.org/docs/flow.html) for asynchronous programming
+
+### Android Software Development Kit 
+
+- Target level 30
+- Minimum level 23
+
+### Open-source Libraries
+
+- [Coil](https://github.com/coil-kt/coil) - an image loading library backed by Kotlin Coroutines
+- [Gson](https://github.com/google/gson) - a JSON library for Kotlin and Java.
+- [UniFlow](https://github.com/uniflow-kt/uniflow-kt) - simple Unidirectional Data Flow for Android & Kotlin
+- [Dagger Hilt](https://dagger.dev/hilt/) - a dependency injection library for Android
+- [ViewBindingDelegate](https://github.com/kirich1409/ViewBindingPropertyDelegate) - a property delegate for [ViewBinding](https://developer.android.com/topic/libraries/view-binding)
+
+### Jetpack Libraries
+
+- [Room Persistence](https://developer.android.com/jetpack/androidx/releases/room) - an abstraction layer over SQLite
+- [Paging 3](https://developer.android.com/topic/libraries/architecture/paging/v3-overview) - a library to load and display pages of data from a larger dataset
+- [Navigation](https://developer.android.com/jetpack/androidx/releases/navigation) - a framework for navigating between 'destinations' 
+- [Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle) - live data Kotlin extensions
+
+### Test Libraries
+- [JUnit](https://junit.org/junit4/) - a simple framework to write repeatable tests
+- [Espresso](https://developer.android.com/training/testing/espresso) - Android UI tests
+- [MockK](https://mockk.io) - a mocking library for Kotlin
+
+### Backend
+- [Firestore](https://firebase.google.com/docs/firestore) - a cloud-hosted, NoSQL database
+- [Firebase Authnetication](https://firebase.google.com/docs/auth) - backend services to authenticate users
 
 ## MAD Score
 
