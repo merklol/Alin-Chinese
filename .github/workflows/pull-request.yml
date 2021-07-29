@@ -1,4 +1,4 @@
-name: Alin Chinese Build
+name: AlinChinese build
 
 on:
   pull_request:
