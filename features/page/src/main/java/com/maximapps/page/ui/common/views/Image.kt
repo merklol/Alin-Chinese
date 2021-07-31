@@ -25,6 +25,7 @@
 package com.maximapps.page.ui.common.views
 
 import android.content.Context
+import android.view.Gravity
 import android.widget.ImageView
 import androidx.appcompat.widget.LinearLayoutCompat
 import coil.load
@@ -45,7 +46,7 @@ internal fun image(
     context: Context,
     link: String,
     modifier: Modifier = Modifier(
-        width = LinearLayoutCompat.LayoutParams.MATCH_PARENT,
+        width = 380.dp,
         height = 300.dp,
         margin = Margin(0, 16.dp, 0, 16.dp)
     )
@@ -62,5 +63,6 @@ private fun ImageView.setLayoutParams(modifier: Modifier) {
     val (start, top, end, bottom) = modifier.margin
     val params = LinearLayoutCompat.LayoutParams(modifier.width, modifier.height)
     params.setMargins(start, top, end, bottom)
+    params.gravity = Gravity.CENTER
     layoutParams = params
 }
