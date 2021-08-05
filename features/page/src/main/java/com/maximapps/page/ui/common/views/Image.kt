@@ -24,13 +24,13 @@
 
 package com.maximapps.page.ui.common.views
 
+import android.app.ActionBar
 import android.content.Context
 import android.view.Gravity
 import android.widget.ImageView
 import androidx.appcompat.widget.LinearLayoutCompat
 import coil.load
 import com.maximapps.page.R
-import com.maximapps.page.ui.common.layout.Margin
 import com.maximapps.page.ui.common.modifiers.Modifier
 import com.maximapps.page.ui.common.unit.dp
 
@@ -46,16 +46,15 @@ internal fun image(
     context: Context,
     link: String,
     modifier: Modifier = Modifier(
-        width = 380.dp,
-        height = 300.dp,
-        margin = Margin(0, 16.dp, 0, 16.dp)
+        width = ActionBar.LayoutParams.MATCH_PARENT,
+        height = 300.dp
     )
 ) = ImageView(context).also {
     it.setLayoutParams(modifier)
-    it.scaleType = ImageView.ScaleType.CENTER_CROP
+    it.scaleType = ImageView.ScaleType.CENTER_INSIDE
     it.load(link) {
         crossfade(true)
-        placeholder(R.drawable.ic_img_placeholder)
+        placeholder(R.drawable.image_placeholder)
     }
 }
 
