@@ -12,7 +12,7 @@ Alin Chinese is a good start for people who learn Chinese or are curious about t
 </p>
 
 <p align="center">
-<img src="images/placeholder.png"/>
+<img src="images/screenshot.png"/>
 </p>
 
 ## Tech stack & Open-source libraries
