@@ -60,12 +60,12 @@ class ProfileFragment @Inject constructor(
 
     private fun onViewClicked(view: View) = when (view.id) {
         R.id.rateAppView -> {
-            openLink("market://details?id=com.maximcode.mccalculator")
+            openLink("market://details?id=com.maximapps.alinchinese")
             true
         }
 
         R.id.privacyPolicyView -> {
-            openLink("http://google.com")
+            openLink("https://sites.google.com/view/alinchinese/privacy_policy")
             true
         }
 
