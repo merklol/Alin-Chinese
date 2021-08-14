@@ -91,11 +91,11 @@ class PreviewDialogTest {
         launchFragment(
             sharedLesson = SharedLesson(
                 id = 0,
-                title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                shortTitle = "Lesson",
+                primaryTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                secondaryTitle = "Lesson",
                 description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                content = "[]",
-                image = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
+                body = "[]",
+                thumbnail = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
                     .toByteArray(),
                 date = "29.05.2022"
             )
@@ -109,11 +109,11 @@ class PreviewDialogTest {
         launchFragment(
             sharedLesson = SharedLesson(
                 id = 0,
-                title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                shortTitle = "Lesson",
+                primaryTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                secondaryTitle = "Lesson",
                 description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                content = "[]",
-                image = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
+                body = "[]",
+                thumbnail = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
                     .toByteArray(),
                 date = "29.05.2022"
             )
@@ -136,11 +136,11 @@ class PreviewDialogTest {
         launchFragment(
             sharedLesson = SharedLesson(
                 id = 0,
-                title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                shortTitle = "Lesson",
+                primaryTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                secondaryTitle = "Lesson",
                 description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                content = "[]",
-                image = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
+                body = "[]",
+                thumbnail = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
                     .toByteArray(),
                 date = "29.05.2022"
             )

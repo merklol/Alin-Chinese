@@ -58,7 +58,7 @@ class FavoritesFragment @Inject constructor(
         onSwipeLeft = {
             val item = adapter.getItemAt(it)
             viewModel.removeFromFavorites(item)
-            showSnackBar(item.title, provider.snackBarActionText) {
+            showSnackBar(item.primaryTitle, provider.snackBarActionText) {
                 viewModel.saveToFavorites(item)
             }
         }

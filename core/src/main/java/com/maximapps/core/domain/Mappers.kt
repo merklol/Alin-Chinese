@@ -37,11 +37,11 @@ import com.maximapps.core.utils.toByteArray
 fun Lesson.toLessonEntity(email: String) = LessonEntity(
     id = id,
     email = email,
-    title = title,
-    shortTitle = shortTitle,
+    primaryTitle = primaryTitle,
+    secondaryTitle = secondaryTitle,
+    thumbnail = thumbnail,
     description = description,
-    content = content,
-    image = image,
+    body = body,
     date = date
 )
 
@@ -52,11 +52,11 @@ fun Lesson.toLessonEntity(email: String) = LessonEntity(
  */
 fun LessonEntity.toLesson() = Lesson(
     id = id,
-    title = title,
-    shortTitle = shortTitle,
+    primaryTitle = primaryTitle,
+    secondaryTitle = secondaryTitle,
+    thumbnail = thumbnail,
     description = description,
-    content = content,
-    image = image,
+    body = body,
     date = date
 )
 
@@ -67,11 +67,11 @@ fun LessonEntity.toLesson() = Lesson(
  */
 fun Lesson.toSharedLesson(imageBitmap: Bitmap) = SharedLesson(
     id = id,
-    title = title,
-    shortTitle = shortTitle,
+    primaryTitle = primaryTitle,
+    secondaryTitle = secondaryTitle,
+    thumbnail = imageBitmap.toByteArray(),
     description = description,
-    content = content,
-    image = imageBitmap.toByteArray(),
+    body = body,
     date = date
 )
 
@@ -82,10 +82,10 @@ fun Lesson.toSharedLesson(imageBitmap: Bitmap) = SharedLesson(
  */
 fun SharedLesson.toLesson() = Lesson(
     id = id,
-    title = title,
-    shortTitle = shortTitle,
+    primaryTitle = primaryTitle,
+    secondaryTitle = secondaryTitle,
+    thumbnail = thumbnail,
     description = description,
-    content = content,
-    image = image,
+    body = body,
     date = date
 )

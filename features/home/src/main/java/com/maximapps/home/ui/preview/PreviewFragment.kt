@@ -72,7 +72,7 @@ class PreviewFragment @Inject constructor() : BottomSheetDialogFragment() {
         }
         else -> lesson?.let {
             viewModel.saveToFavorites(it)
-            showMessage(R.string.added_to_favorites, it.title)
+            showMessage(R.string.added_to_favorites, it.primaryTitle)
         }
     }
 
@@ -84,10 +84,10 @@ class PreviewFragment @Inject constructor() : BottomSheetDialogFragment() {
         when (sharedLesson) {
             null -> showMessage(R.string.error_preview_message)
             else -> {
-                binding.title.text = sharedLesson.title
+                binding.title.text = sharedLesson.primaryTitle
                 binding.description.text = sharedLesson.description
                 binding.date.text = sharedLesson.date
-                binding.imageHolder.load(sharedLesson.image.toBitmap()) {
+                binding.imageHolder.load(sharedLesson.thumbnail.toBitmap()) {
                     placeholder(R.drawable.ic_img_placeholder)
                 }
             }
