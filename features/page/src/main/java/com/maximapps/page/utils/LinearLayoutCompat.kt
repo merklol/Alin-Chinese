@@ -28,9 +28,9 @@ import android.content.Context
 import androidx.appcompat.widget.LinearLayoutCompat
 import com.maximapps.page.data.models.Blockquote
 import com.maximapps.page.data.models.Divider
-import com.maximapps.page.data.models.Header1
-import com.maximapps.page.data.models.Header2
-import com.maximapps.page.data.models.Header3
+import com.maximapps.page.data.models.Heading1
+import com.maximapps.page.data.models.Heading2
+import com.maximapps.page.data.models.Heading3
 import com.maximapps.page.data.models.Image
 import com.maximapps.page.data.models.Node
 import com.maximapps.page.data.models.Paragraph
@@ -54,9 +54,9 @@ import com.maximapps.page.ui.common.views.unorderedList
 internal fun LinearLayoutCompat.addViews(context: Context, nodes: List<Node>) {
     nodes.forEach {
         when (it) {
-            is Header1 -> addView(heading1(context, it.value, it.inlineStyle, it.alignment))
-            is Header2 -> addView(heading2(context, it.value, it.inlineStyle, it.alignment))
-            is Header3 -> addView(heading3(context, it.value, it.inlineStyle, it.alignment))
+            is Heading1 -> addView(heading1(context, it.value, it.inlineStyle, it.alignment))
+            is Heading2 -> addView(heading2(context, it.value, it.inlineStyle, it.alignment))
+            is Heading3 -> addView(heading3(context, it.value, it.inlineStyle, it.alignment))
             is Paragraph -> addView(paragraph(context, it.value, it.inlineStyle, it.alignment))
             is Image -> addView(image(context = context, link = it.link))
             is UnorderedList -> addView(unorderedList(context = context, items = it.items))

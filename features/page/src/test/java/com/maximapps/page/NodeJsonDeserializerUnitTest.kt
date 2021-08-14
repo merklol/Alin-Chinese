@@ -32,9 +32,9 @@ import com.maximapps.page.data.deserializers.NodeJsonDeserializer
 import com.maximapps.page.data.models.Alignment
 import com.maximapps.page.data.models.Blockquote
 import com.maximapps.page.data.models.Divider
-import com.maximapps.page.data.models.Header1
-import com.maximapps.page.data.models.Header2
-import com.maximapps.page.data.models.Header3
+import com.maximapps.page.data.models.Heading1
+import com.maximapps.page.data.models.Heading2
+import com.maximapps.page.data.models.Heading3
 import com.maximapps.page.data.models.Image
 import com.maximapps.page.data.models.InlineStyle
 import com.maximapps.page.data.models.ListItem
@@ -63,7 +63,7 @@ class NodeJsonDeserializerUnitTest {
     fun `when node type is header1 then returns a list of nodes with a Header1 object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk.json")
         val expected = listOf(
-            Header1(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Heading1(alignment = Alignment.Center, inlineStyle = null, value = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
@@ -72,7 +72,7 @@ class NodeJsonDeserializerUnitTest {
     fun `when node type is header2 then returns a list of nodes with a Header2 object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk2.json")
         val expected = listOf(
-            Header2(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Heading2(alignment = Alignment.Center, inlineStyle = null, value = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
@@ -81,7 +81,7 @@ class NodeJsonDeserializerUnitTest {
     fun `when node type is header3 then returns a list of nodes with a Header3 object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk3.json")
         val expected = listOf(
-            Header3(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Heading3(alignment = Alignment.Center, inlineStyle = null, value = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
