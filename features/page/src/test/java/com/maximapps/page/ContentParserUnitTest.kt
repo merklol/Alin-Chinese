@@ -55,14 +55,14 @@ class ContentParserUnitTest {
         val expected = listOf(
             Paragraph(
                 alignment = Alignment.End,
-                inlineStyle = null,
+                inlineStyles = null,
                 value = "Lorem ipsum"
             ),
             Image(link = ""),
             Blockquote(value = "Lorem ipsum"),
             Paragraph(
                 alignment = Alignment.Start,
-                inlineStyle = null,
+                inlineStyles = null,
                 value = "Lorem ipsum"
             )
         )
