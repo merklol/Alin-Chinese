@@ -54,10 +54,10 @@ import com.maximapps.page.ui.common.views.unorderedList
 internal fun LinearLayoutCompat.addViews(context: Context, nodes: List<Node>) {
     nodes.forEach {
         when (it) {
-            is Heading1 -> addView(heading1(context, it.value, it.inlineStyle, it.alignment))
-            is Heading2 -> addView(heading2(context, it.value, it.inlineStyle, it.alignment))
-            is Heading3 -> addView(heading3(context, it.value, it.inlineStyle, it.alignment))
-            is Paragraph -> addView(paragraph(context, it.value, it.inlineStyle, it.alignment))
+            is Heading1 -> addView(heading1(context, it.value, it.inlineStyles, it.alignment))
+            is Heading2 -> addView(heading2(context, it.value, it.inlineStyles, it.alignment))
+            is Heading3 -> addView(heading3(context, it.value, it.inlineStyles, it.alignment))
+            is Paragraph -> addView(paragraph(context, it.value, it.inlineStyles, it.alignment))
             is Image -> addView(image(context = context, link = it.link))
             is UnorderedList -> addView(unorderedList(context = context, items = it.items))
             is Blockquote -> addView(blockquote(context = context, text = it.value))

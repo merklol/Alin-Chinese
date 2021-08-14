@@ -63,7 +63,7 @@ class NodeJsonDeserializerUnitTest {
     fun `when node type is header1 then returns a list of nodes with a Header1 object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk.json")
         val expected = listOf(
-            Heading1(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Heading1(alignment = Alignment.Center, inlineStyles = null, value = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
@@ -72,7 +72,7 @@ class NodeJsonDeserializerUnitTest {
     fun `when node type is header2 then returns a list of nodes with a Header2 object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk2.json")
         val expected = listOf(
-            Heading2(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Heading2(alignment = Alignment.Center, inlineStyles = null, value = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
@@ -81,7 +81,7 @@ class NodeJsonDeserializerUnitTest {
     fun `when node type is header3 then returns a list of nodes with a Header3 object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk3.json")
         val expected = listOf(
-            Heading3(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Heading3(alignment = Alignment.Center, inlineStyles = null, value = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
@@ -90,7 +90,7 @@ class NodeJsonDeserializerUnitTest {
     fun `when node type is paragraph then returns a list of nodes with a Paragraph object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk4.json")
         val expected = listOf(
-            Paragraph(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Paragraph(alignment = Alignment.Center, inlineStyles = null, value = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
