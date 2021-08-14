@@ -39,7 +39,7 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Assert.assertThrows
 import org.junit.Test
 
-class InlineStyleDeserializerUnitTest {
+class InlineStylesDeserializerUnitTest {
     private val type = object : TypeToken<List<InlineStyle>>() {}.type
     private val classLoader = javaClass.classLoader
     private val gson = GsonBuilder()
