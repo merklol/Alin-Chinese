@@ -38,9 +38,9 @@ internal sealed class Node
  *
  * @since 0.1
  */
-internal data class Header1(
+internal data class Heading1(
     val alignment: Alignment?,
-    @SerializedName("inline-style")
+    @SerializedName("inline-styles")
     val inlineStyle: List<InlineStyle>?,
     val value: String
 ) : Node()
@@ -50,9 +50,9 @@ internal data class Header1(
  *
  * @since 0.1
  */
-internal data class Header2(
+internal data class Heading2(
     val alignment: Alignment?,
-    @SerializedName("inline-style")
+    @SerializedName("inline-styles")
     val inlineStyle: List<InlineStyle>?,
     val value: String
 ) : Node()
@@ -62,9 +62,9 @@ internal data class Header2(
  *
  * @since 0.1
  */
-internal data class Header3(
+internal data class Heading3(
     val alignment: Alignment?,
-    @SerializedName("inline-style")
+    @SerializedName("inline-styles")
     val inlineStyle: List<InlineStyle>?,
     val value: String
 ) : Node()
@@ -76,7 +76,7 @@ internal data class Header3(
  */
 internal data class Paragraph(
     val alignment: Alignment?,
-    @SerializedName("inline-style")
+    @SerializedName("inline-styles")
     val inlineStyle: List<InlineStyle>?,
     val value: String
 ) : Node()

@@ -29,9 +29,9 @@ import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
 import com.maximapps.page.data.models.Blockquote
 import com.maximapps.page.data.models.Divider
-import com.maximapps.page.data.models.Header1
-import com.maximapps.page.data.models.Header2
-import com.maximapps.page.data.models.Header3
+import com.maximapps.page.data.models.Heading1
+import com.maximapps.page.data.models.Heading2
+import com.maximapps.page.data.models.Heading3
 import com.maximapps.page.data.models.Image
 import com.maximapps.page.data.models.Node
 import com.maximapps.page.data.models.Paragraph
@@ -50,9 +50,9 @@ internal class NodeJsonDeserializer : JsonDeserializer<Node> {
         json: JsonElement, typeOfT: Type, context: JsonDeserializationContext
     ): Node =
         when (json.asJsonObject["type"].asString) {
-            "header1" -> context.deserialize(json, Header1::class.java)
-            "header2" -> context.deserialize(json, Header2::class.java)
-            "header3" -> context.deserialize(json, Header3::class.java)
+            "heading1" -> context.deserialize(json, Heading1::class.java)
+            "heading2" -> context.deserialize(json, Heading2::class.java)
+            "heading3" -> context.deserialize(json, Heading3::class.java)
             "paragraph" -> context.deserialize(json, Paragraph::class.java)
             "img" -> context.deserialize(json, Image::class.java)
             "divider" -> context.deserialize(json, Divider::class.java)
