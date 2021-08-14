@@ -26,7 +26,7 @@ package com.maximapps.page
 
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
-import com.maximapps.page.data.deserializers.InlineStyleJsonDeserializer
+import com.maximapps.page.data.deserializers.InlineStylesJsonDeserializer
 import com.maximapps.page.data.models.Bold
 import com.maximapps.page.data.models.InlineStyle
 import com.maximapps.page.data.models.Italic
@@ -43,7 +43,7 @@ class InlineStyleDeserializerUnitTest {
     private val type = object : TypeToken<List<InlineStyle>>() {}.type
     private val classLoader = javaClass.classLoader
     private val gson = GsonBuilder()
-        .registerTypeAdapter(InlineStyle::class.java, InlineStyleJsonDeserializer())
+        .registerTypeAdapter(InlineStyle::class.java, InlineStylesJsonDeserializer())
         .create()
 
     @Test
