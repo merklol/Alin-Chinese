@@ -42,7 +42,7 @@ internal data class Heading1(
     val alignment: Alignment?,
     @SerializedName("inline-styles")
     val inlineStyles: List<InlineStyle>?,
-    val value: String
+    val text: String
 ) : Node()
 
 /**
@@ -54,7 +54,7 @@ internal data class Heading2(
     val alignment: Alignment?,
     @SerializedName("inline-styles")
     val inlineStyles: List<InlineStyle>?,
-    val value: String
+    val text: String
 ) : Node()
 
 /**
@@ -66,7 +66,7 @@ internal data class Heading3(
     val alignment: Alignment?,
     @SerializedName("inline-styles")
     val inlineStyles: List<InlineStyle>?,
-    val value: String
+    val text: String
 ) : Node()
 
 /**
@@ -78,7 +78,7 @@ internal data class Paragraph(
     val alignment: Alignment?,
     @SerializedName("inline-styles")
     val inlineStyles: List<InlineStyle>?,
-    val value: String
+    val text: String
 ) : Node()
 
 /**
@@ -86,7 +86,7 @@ internal data class Paragraph(
  *
  * @since 0.1
  */
-internal data class Blockquote(val value: String) : Node()
+internal data class Blockquote(val text: String) : Node()
 
 /**
  * Defines an image.

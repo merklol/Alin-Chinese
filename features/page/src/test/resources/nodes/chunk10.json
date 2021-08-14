@@ -2,7 +2,7 @@
   {
     "type": "paragraph",
     "alignment": "end",
-    "value": "Lorem ipsum"
+    "text": "Lorem ipsum"
   },
   {
     "type": "img",
@@ -10,11 +10,11 @@
   },
   {
     "type": "blockquote",
-    "value": "Lorem ipsum"
+    "text": "Lorem ipsum"
   },
   {
     "type": "paragraph",
     "alignment": "start",
-    "value": "Lorem ipsum"
+    "text": "Lorem ipsum"
   }
 ]

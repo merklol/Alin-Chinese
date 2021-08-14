@@ -26,7 +26,7 @@ object AppConfiguration {
     const val CompileSdk = 30
     const val MinSdk = 23
     const val TargetSdk = 30
-    const val VersionCode = 8
-    const val VersionName = "0.5.4"
+    const val VersionCode = 9
+    const val VersionName = "0.5.5"
     const val JvmTarget = "1.8"
 }

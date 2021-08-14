@@ -57,7 +57,7 @@ internal class NodeJsonDeserializer : JsonDeserializer<Node> {
             "img" -> context.deserialize(json, Image::class.java)
             "divider" -> context.deserialize(json, Divider::class.java)
             "blockquote" -> context.deserialize(json, Blockquote::class.java)
-            "list" -> context.deserialize(json, UnorderedList::class.java)
+            "unordered-list" -> context.deserialize(json, UnorderedList::class.java)
             else -> throw InvalidNodeTypeException("Unknown node type")
         }
 }
