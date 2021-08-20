@@ -1,7 +1,7 @@
 [
   {
-    "type":"header3",
+    "type":"heading3",
     "alignment":"center",
-    "value":"test"
+    "text":"test"
   }
 ]

@@ -31,11 +31,11 @@ package com.maximapps.home.data.models
  */
 internal data class Source(
     var id: Int = 0,
-    var template: Int = 0,
-    var title: String = "",
-    var shortTitle: String = "",
+    var primaryTitle: String = "",
+    var secondaryTitle: String = "",
+    var thumbnail: String = "",
     var description: String = "",
-    var content: String = "",
-    var imageSrc: String = "",
+    var template: Int = 0,
+    var body: String = "",
     var date: String = ""
 )

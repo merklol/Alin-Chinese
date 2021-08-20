@@ -27,7 +27,7 @@ package com.maximapps.page
 import com.google.gson.GsonBuilder
 import com.maximapps.page.data.ContentParser
 import com.maximapps.page.data.deserializers.AlignmentDeserializer
-import com.maximapps.page.data.deserializers.InlineStyleJsonDeserializer
+import com.maximapps.page.data.deserializers.InlineStylesJsonDeserializer
 import com.maximapps.page.data.deserializers.NodeJsonDeserializer
 import com.maximapps.page.data.models.Alignment
 import com.maximapps.page.data.models.Blockquote
@@ -44,7 +44,7 @@ class ContentParserUnitTest {
     private val classLoader = javaClass.classLoader
     private val gson = GsonBuilder()
         .registerTypeAdapter(Node::class.java, NodeJsonDeserializer())
-        .registerTypeAdapter(InlineStyle::class.java, InlineStyleJsonDeserializer())
+        .registerTypeAdapter(InlineStyle::class.java, InlineStylesJsonDeserializer())
         .registerTypeAdapter(Alignment::class.java, AlignmentDeserializer())
         .create()
     private val contentParser = ContentParser(gson)
@@ -55,15 +55,15 @@ class ContentParserUnitTest {
         val expected = listOf(
             Paragraph(
                 alignment = Alignment.End,
-                inlineStyle = null,
-                value = "Lorem ipsum"
+                inlineStyles = null,
+                text = "Lorem ipsum"
             ),
             Image(link = ""),
-            Blockquote(value = "Lorem ipsum"),
+            Blockquote(text = "Lorem ipsum"),
             Paragraph(
                 alignment = Alignment.Start,
-                inlineStyle = null,
-                value = "Lorem ipsum"
+                inlineStyles = null,
+                text = "Lorem ipsum"
             )
         )
         assertThat(contentParser(json!!), `is`(expected))

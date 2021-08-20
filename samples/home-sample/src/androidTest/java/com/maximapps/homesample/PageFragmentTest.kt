@@ -92,11 +92,11 @@ class PageFragmentTest {
         launchFragment(
             SharedLesson(
                 id = 0,
-                title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                shortTitle = "Lesson",
+                primaryTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                secondaryTitle = "Lesson",
                 description = "",
-                content = content,
-                image = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
+                body = content,
+                thumbnail = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
                     .toByteArray(),
                 date = ""
             )
@@ -117,11 +117,11 @@ class PageFragmentTest {
         launchFragment(
             SharedLesson(
                 id = 0,
-                title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                shortTitle = "Lesson",
+                primaryTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                secondaryTitle = "Lesson",
                 description = "",
-                content = "[]",
-                image = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
+                body = "[]",
+                thumbnail = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
                     .toByteArray(),
                 date = ""
             )
@@ -135,11 +135,11 @@ class PageFragmentTest {
         launchFragment(
             SharedLesson(
                 id = 0,
-                title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                shortTitle = "Lesson",
+                primaryTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                secondaryTitle = "Lesson",
                 description = "",
-                content = content,
-                image = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
+                body = content,
+                thumbnail = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
                     .toByteArray(),
                 date = ""
             )
@@ -153,11 +153,11 @@ class PageFragmentTest {
         launchFragment(
             SharedLesson(
                 id = 0,
-                title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                shortTitle = "Lesson",
+                primaryTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                secondaryTitle = "Lesson",
                 description = "",
-                content = content,
-                image = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
+                body = content,
+                thumbnail = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
                     .toByteArray(),
                 date = ""
             )
@@ -175,11 +175,11 @@ class PageFragmentTest {
         launchFragment(
             SharedLesson(
                 id = 0,
-                title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                shortTitle = "Lesson",
+                primaryTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                secondaryTitle = "Lesson",
                 description = "",
-                content = content,
-                image = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
+                body = content,
+                thumbnail = getInstrumentation().readBitmapFromAssets("sample_image.jpg")
                     .toByteArray(),
                 date = ""
             )

@@ -41,7 +41,7 @@ import java.lang.reflect.Type
  *
  * @since 0.1
  */
-internal class InlineStyleJsonDeserializer : JsonDeserializer<InlineStyle> {
+internal class InlineStylesJsonDeserializer : JsonDeserializer<InlineStyle> {
 
     override fun deserialize(
         json: JsonElement, typeOfT: Type, context: JsonDeserializationContext

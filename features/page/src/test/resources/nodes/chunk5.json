@@ -1,6 +1,6 @@
 [
   {
-    "type":"list",
+    "type":"unordered-list",
     "items":[
       {
         "value":"item 1"

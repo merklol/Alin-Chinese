@@ -31,11 +31,11 @@ package com.maximapps.home.data.models
  */
 data class Lesson(
     val id: Int,
-    val template: Int,
-    val title: String,
-    val shortTitle: String,
+    val primaryTitle: String,
+    val secondaryTitle: String,
+    val thumbnail: String,
     val description: String,
-    val content: String,
-    val imageSrc: String,
+    val template: Int,
+    val body: String,
     val date: String
 )

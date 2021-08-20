@@ -38,12 +38,12 @@ import com.maximapps.home.data.models.Source
 internal fun MutableList<Source>.toLessons() = map {
     Lesson(
         id = it.id,
-        template = it.template,
-        title = it.title,
-        shortTitle = it.shortTitle,
+        primaryTitle = it.primaryTitle,
+        secondaryTitle = it.secondaryTitle,
+        thumbnail = it.thumbnail,
         description = it.description,
-        content = it.content,
-        imageSrc = it.imageSrc,
+        template = it.template,
+        body = it.body,
         date = it.date
     )
 }
@@ -55,10 +55,10 @@ internal fun MutableList<Source>.toLessons() = map {
  */
 internal fun Lesson.toSharedLesson(imageBitmap: Bitmap) = SharedLesson(
     id = id,
-    title = title,
-    shortTitle = shortTitle,
+    primaryTitle = primaryTitle,
+    secondaryTitle = secondaryTitle,
+    thumbnail = imageBitmap.toByteArray(),
     description = description,
-    content = content,
-    image = imageBitmap.toByteArray(),
+    body = body,
     date = date
 )

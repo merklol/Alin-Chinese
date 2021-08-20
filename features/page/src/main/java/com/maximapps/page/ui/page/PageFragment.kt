@@ -71,14 +71,14 @@ class PageFragment @Inject constructor() : Fragment(R.layout.fragment_page) {
         R.id.addToFavorites -> {
             lesson?.let {
                 viewModel.saveToFavorites(it)
-                showMessage(R.string.added_to_favorites, it.title)
+                showMessage(R.string.added_to_favorites, it.primaryTitle)
             }
             true
         }
         R.id.removeFromFavorites -> {
             lesson?.let {
                 viewModel.removeFromFavorites(it)
-                showMessage(R.string.removed_from_favorites, it.title)
+                showMessage(R.string.removed_from_favorites, it.primaryTitle)
             }
             true
         }
@@ -91,7 +91,7 @@ class PageFragment @Inject constructor() : Fragment(R.layout.fragment_page) {
 
     private fun parsePage(sharedLesson: SharedLesson?) = when (sharedLesson) {
         null -> showMessage(R.string.error_page_message)
-        else -> viewModel.createPage(sharedLesson.content)
+        else -> viewModel.createPage(sharedLesson.body)
     }
 
     private fun renderPage() = onStates(viewModel) {
@@ -108,9 +108,9 @@ class PageFragment @Inject constructor() : Fragment(R.layout.fragment_page) {
 
     private fun setupToolbar() = lesson?.let {
         toolbar.internal.setupWithNavController(findNavController())
-        toolbar.internal.setup(R.menu.page_menu, it.shortTitle, ::onOptionsItemSelected)
-        toolbar.expandedTitle.text = it.title
-        toolbar.headerImage.load(it.image.toBitmap()) { placeholder(R.drawable.ic_img_placeholder) }
+        toolbar.internal.setup(R.menu.page_menu, it.secondaryTitle, ::onOptionsItemSelected)
+        toolbar.expandedTitle.text = it.primaryTitle
+        toolbar.headerImage.load(it.thumbnail.toBitmap()) { placeholder(R.drawable.ic_img_placeholder) }
     }
 }
 

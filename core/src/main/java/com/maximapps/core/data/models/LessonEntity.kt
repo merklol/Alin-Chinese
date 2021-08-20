@@ -32,11 +32,11 @@ data class LessonEntity(
     @PrimaryKey
     val id: Int,
     val email: String,
-    val title: String,
-    val shortTitle: String,
+    val primaryTitle: String,
+    val secondaryTitle: String,
+    val thumbnail: ByteArray,
     val description: String,
-    val content: String,
-    val image: ByteArray,
+    val body: String,
     val date: String
 ) {
 
@@ -48,11 +48,11 @@ data class LessonEntity(
 
         if (id != other.id) return false
         if (email != other.email) return false
-        if (title != other.title) return false
-        if (shortTitle != other.shortTitle) return false
+        if (primaryTitle != other.primaryTitle) return false
+        if (secondaryTitle != other.secondaryTitle) return false
         if (description != other.description) return false
-        if (content != other.content) return false
-        if (!image.contentEquals(other.image)) return false
+        if (body != other.body) return false
+        if (!thumbnail.contentEquals(other.thumbnail)) return false
         if (date != other.date) return false
 
         return true
@@ -61,11 +61,11 @@ data class LessonEntity(
     override fun hashCode(): Int {
         var result = id
         result = 31 * result + email.hashCode()
-        result = 31 * result + title.hashCode()
-        result = 31 * result + shortTitle.hashCode()
+        result = 31 * result + primaryTitle.hashCode()
+        result = 31 * result + secondaryTitle.hashCode()
         result = 31 * result + description.hashCode()
-        result = 31 * result + content.hashCode()
-        result = 31 * result + image.contentHashCode()
+        result = 31 * result + body.hashCode()
+        result = 31 * result + thumbnail.contentHashCode()
         result = 31 * result + date.hashCode()
         return result
     }

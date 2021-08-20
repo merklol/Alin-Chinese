@@ -27,14 +27,14 @@ package com.maximapps.page
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import com.maximapps.page.data.deserializers.AlignmentDeserializer
-import com.maximapps.page.data.deserializers.InlineStyleJsonDeserializer
+import com.maximapps.page.data.deserializers.InlineStylesJsonDeserializer
 import com.maximapps.page.data.deserializers.NodeJsonDeserializer
 import com.maximapps.page.data.models.Alignment
 import com.maximapps.page.data.models.Blockquote
 import com.maximapps.page.data.models.Divider
-import com.maximapps.page.data.models.Header1
-import com.maximapps.page.data.models.Header2
-import com.maximapps.page.data.models.Header3
+import com.maximapps.page.data.models.Heading1
+import com.maximapps.page.data.models.Heading2
+import com.maximapps.page.data.models.Heading3
 import com.maximapps.page.data.models.Image
 import com.maximapps.page.data.models.InlineStyle
 import com.maximapps.page.data.models.ListItem
@@ -54,34 +54,34 @@ class NodeJsonDeserializerUnitTest {
     private val classLoader = javaClass.classLoader
     private val gson = GsonBuilder()
         .registerTypeAdapter(Node::class.java, NodeJsonDeserializer())
-        .registerTypeAdapter(InlineStyle::class.java, InlineStyleJsonDeserializer())
+        .registerTypeAdapter(InlineStyle::class.java, InlineStylesJsonDeserializer())
         .registerTypeAdapter(Alignment::class.java, AlignmentDeserializer())
         .create()
 
 
     @Test
-    fun `when node type is header1 then returns a list of nodes with a Header1 object`() {
+    fun `when node type is heading1 then returns a list of nodes with a Header1 object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk.json")
         val expected = listOf(
-            Header1(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Heading1(alignment = Alignment.Center, inlineStyles = null, text = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
 
     @Test
-    fun `when node type is header2 then returns a list of nodes with a Header2 object`() {
+    fun `when node type is heading2 then returns a list of nodes with a Header2 object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk2.json")
         val expected = listOf(
-            Header2(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Heading2(alignment = Alignment.Center, inlineStyles = null, text = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
 
     @Test
-    fun `when node type is header3 then returns a list of nodes with a Header3 object`() {
+    fun `when node type is heading3 then returns a list of nodes with a Header3 object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk3.json")
         val expected = listOf(
-            Header3(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Heading3(alignment = Alignment.Center, inlineStyles = null, text = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
@@ -90,7 +90,7 @@ class NodeJsonDeserializerUnitTest {
     fun `when node type is paragraph then returns a list of nodes with a Paragraph object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk4.json")
         val expected = listOf(
-            Paragraph(alignment = Alignment.Center, inlineStyle = null, value = "test")
+            Paragraph(alignment = Alignment.Center, inlineStyles = null, text = "test")
         )
         assertThat(gson.fromJson<List<Node>>(json, type), `is`(expected))
     }
@@ -126,7 +126,7 @@ class NodeJsonDeserializerUnitTest {
     @Test
     fun `when node type is blockquote then returns a list of nodes with a Blockquote object`() {
         val json = classLoader?.readFileFromResources("nodes/chunk8.json")
-        assertThat(gson.fromJson<List<Node>>(json, type), `is`(listOf(Blockquote(value = "test"))))
+        assertThat(gson.fromJson<List<Node>>(json, type), `is`(listOf(Blockquote(text = "test"))))
     }
 
     @Test

@@ -27,7 +27,7 @@ package com.maximapps.page.di
 import com.google.gson.GsonBuilder
 import com.maximapps.page.data.ContentParser
 import com.maximapps.page.data.deserializers.AlignmentDeserializer
-import com.maximapps.page.data.deserializers.InlineStyleJsonDeserializer
+import com.maximapps.page.data.deserializers.InlineStylesJsonDeserializer
 import com.maximapps.page.data.deserializers.NodeJsonDeserializer
 import com.maximapps.page.data.models.Alignment
 import com.maximapps.page.data.models.Node
@@ -47,7 +47,7 @@ internal object PageModule {
     fun providesParser(): ContentParser = ContentParser(
         GsonBuilder()
             .registerTypeAdapter(Node::class.java, NodeJsonDeserializer())
-            .registerTypeAdapter(InlineStyle::class.java, InlineStyleJsonDeserializer())
+            .registerTypeAdapter(InlineStyle::class.java, InlineStylesJsonDeserializer())
             .registerTypeAdapter(Alignment::class.java, AlignmentDeserializer())
             .create()
     )

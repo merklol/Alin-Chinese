@@ -44,7 +44,7 @@ internal class FavoritesDiffUtil(
         old[oldItemPosition].id == new[newItemPosition].id
 
     override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int) =
-        old[oldItemPosition].title == new[newItemPosition].title
+        old[oldItemPosition].primaryTitle == new[newItemPosition].primaryTitle
                 && old[oldItemPosition].date == new[newItemPosition].date
-                && old[oldItemPosition].image.contentEquals(new[newItemPosition].image)
+                && old[oldItemPosition].thumbnail.contentEquals(new[newItemPosition].thumbnail)
 }

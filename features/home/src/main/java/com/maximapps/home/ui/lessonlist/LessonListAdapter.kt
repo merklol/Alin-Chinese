@@ -117,9 +117,9 @@ class LessonListAdapter(callback: DiffUtil.ItemCallback<Lesson>) :
         override fun bind(lesson: Lesson) {
             itemView.isEnabled = false
 
-            binding.title.text = lesson.title
+            binding.title.text = lesson.primaryTitle
             binding.date.text = lesson.date
-            binding.imageHolder.load(lesson.imageSrc) {
+            binding.imageHolder.load(lesson.thumbnail) {
                 placeholder(R.drawable.ic_img_placeholder)
                 listener(onSuccess = { _, _ -> itemView.isEnabled = true })
             }
@@ -139,9 +139,9 @@ class LessonListAdapter(callback: DiffUtil.ItemCallback<Lesson>) :
         override fun bind(lesson: Lesson) {
             itemView.isEnabled = false
 
-            binding.title.text = lesson.title
+            binding.title.text = lesson.primaryTitle
             binding.date.text = lesson.date
-            binding.imageHolder.load(lesson.imageSrc) {
+            binding.imageHolder.load(lesson.thumbnail) {
                 placeholder(R.drawable.ic_img_placeholder)
                 listener(onSuccess = { _, _ -> itemView.isEnabled = true })
             }

@@ -33,31 +33,31 @@ fun provideSampleData(context: Context) = listOf(
     LessonEntity(
         id = 0,
         email = "admin@gmail.com",
-        title = "Common Chinese Grammar Structures for 的 (de) vs. 得 (de) vs. 地(de)",
-        shortTitle = "Lesson 1",
+        primaryTitle = "Common Chinese Grammar Structures for 的 (de) vs. 得 (de) vs. 地(de)",
+        secondaryTitle = "Lesson 1",
         description = "",
-        content = "[{\"type\": \"header1\", \"value\": \"Hello world!\"}]",
-        image = context.readBitmapFromAssets("sample_image.jpg").toByteArray(),
+        body = "[{\"type\": \"header1\", \"value\": \"Hello world!\"}]",
+        thumbnail = context.readBitmapFromAssets("sample_image.jpg").toByteArray(),
         date = "20.20.2020"
     ),
     LessonEntity(
         id = 1,
         email = "admin@gmail.com",
-        title = "Watching videos is definitely one of the interesting and best ways to alleviate the pressure",
-        shortTitle = "Lesson 2",
+        primaryTitle = "Watching videos is definitely one of the interesting and best ways to alleviate the pressure",
+        secondaryTitle = "Lesson 2",
         description = "",
-        content = "[{\"type\": \"header1\", \"value\": \"Hello world!\"}]",
-        image = context.readBitmapFromAssets("sample_image.jpg").toByteArray(),
+        body = "[{\"type\": \"header1\", \"value\": \"Hello world!\"}]",
+        thumbnail = context.readBitmapFromAssets("sample_image.jpg").toByteArray(),
         date = "20.20.2020"
     ),
     LessonEntity(
         id = 2,
         email = "admin@gmail.com",
-        title = "Traveling in China – Business Etiquette and Culture",
-        shortTitle = "Lesson 3",
+        primaryTitle = "Traveling in China – Business Etiquette and Culture",
+        secondaryTitle = "Lesson 3",
         description = "",
-        content = "[{\"type\": \"header1\", \"value\": \"Hello world!\"}]",
-        image = context.readBitmapFromAssets("sample_image.jpg").toByteArray(),
+        body = "[{\"type\": \"header1\", \"value\": \"Hello world!\"}]",
+        thumbnail = context.readBitmapFromAssets("sample_image.jpg").toByteArray(),
         date = "20.20.2020"
     )
 )

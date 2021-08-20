@@ -83,9 +83,9 @@ class FavoritesListAdapter : RecyclerView.Adapter<FavoritesListAdapter.ListItemV
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(lesson: Lesson) {
-            binding.title.text = lesson.title
+            binding.title.text = lesson.primaryTitle
             binding.date.text = lesson.date
-            binding.imageHolder.setImageBitmap(lesson.image.toBitmap())
+            binding.imageHolder.setImageBitmap(lesson.thumbnail.toBitmap())
 
             itemView.setOnClickListener {
                 val bitmap = binding.imageHolder.drawable.toBitmap()
